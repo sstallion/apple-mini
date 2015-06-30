@@ -1,0 +1,12 @@
+[Eagle]
+Version="07 03 00"
+Platform="Linux"
+Serial="7121D5BDC7-LSR-WLM-1SS"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="apple-idun.lbr"
+UsedLibrary="frames.lbr"
+UsedLibrary="rcl.lbr"
