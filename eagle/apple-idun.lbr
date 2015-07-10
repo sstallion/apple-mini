@@ -248,10 +248,10 @@ SOT340-1 / JEDEC MO-150AG</description>
 <pin name="CBUS6" x="17.78" y="-17.78" length="short" swaplevel="1" rot="R180"/>
 <pin name="USBDP" x="-17.78" y="12.7" length="short" direction="in"/>
 <pin name="USBDM" x="-17.78" y="15.24" length="short" direction="in"/>
-<pin name="!RESET" x="-17.78" y="-2.54" length="short" direction="in"/>
-<pin name="!SI/WU" x="-17.78" y="0" length="short" direction="in"/>
-<pin name="!RD" x="-17.78" y="7.62" length="short" direction="in"/>
-<pin name="!WR" x="-17.78" y="5.08" length="short" direction="in"/>
+<pin name="!RESET" x="-17.78" y="-7.62" length="short" direction="in"/>
+<pin name="!SIWU" x="-17.78" y="-5.08" length="short" direction="in"/>
+<pin name="!RD" x="-17.78" y="5.08" length="short" direction="in"/>
+<pin name="!WR" x="-17.78" y="2.54" length="short" direction="in"/>
 </symbol>
 <symbol name="PWRN">
 <text x="0" y="0" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
@@ -326,7 +326,7 @@ SOT340-1 / JEDEC MO-150AG</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FT240X" prefix="U" uservalue="yes">
+<deviceset name="FT240X" prefix="U">
 <description>&lt;b&gt;FT240X - Full Speed USB to 8-bit FIFO&lt;/b&gt;
 &lt;p&gt;
 This USB2.0 Full Speed  IC offers a compact bridge to 8 bit wide FIFO interfaces. The device is a FIFO, capable of operating up to 1 MByte/s, with low power consumption (8mA). The FT240X includes the complete FT-X series feature set and enables USB to be added into a system design quickly and easily over a 8 bit wide FIFO interface
@@ -337,12 +337,12 @@ This USB2.0 Full Speed  IC offers a compact bridge to 8 bit wide FIFO interfaces
 <gate name="P" symbol="PWRN" x="-33.02" y="0" addlevel="request"/>
 </gates>
 <devices>
-<device name="Q" package="SSOP24">
+<device name="S" package="SSOP24">
 <connects>
 <connect gate="G$1" pin="!RD" pad="11"/>
 <connect gate="G$1" pin="!RESET" pad="16"/>
 <connect gate="G$1" pin="!RXF" pad="21"/>
-<connect gate="G$1" pin="!SI/WU" pad="10"/>
+<connect gate="G$1" pin="!SIWU" pad="10"/>
 <connect gate="G$1" pin="!TXE" pad="20"/>
 <connect gate="G$1" pin="!WR" pad="12"/>
 <connect gate="G$1" pin="3V3OUT" pad="15"/>
@@ -364,9 +364,7 @@ This USB2.0 Full Speed  IC offers a compact bridge to 8 bit wide FIFO interfaces
 <connect gate="P" pin="VCC" pad="18"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="VALUE" value="FT240XQ" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -405,7 +403,7 @@ This USB2.0 Full Speed  IC offers a compact bridge to 8 bit wide FIFO interfaces
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS2082" prefix="U" uservalue="yes">
+<deviceset name="TPS2082" prefix="U">
 <description>&lt;b&gt;TI TPS2082D High-Side MOSFET Switch IC&lt;/b&gt;
 &lt;p&gt;
 The TPS2080, TPS2081, and TPS2082 dual and the
@@ -431,9 +429,7 @@ circuits are likely to be encountered.
 <connect gate="G$1" pin="OUT2" pad="6"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="VALUE" value="TPS2082D"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
