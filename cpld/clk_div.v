@@ -32,16 +32,17 @@ module clk_div(input  reset,
 
 	reg [2:0] count;
 
-	always @(posedge clk_in or negedge reset) begin
+	always @(posedge clk_in) begin
 		if (!reset) begin
-			count   <= 3'b111;
-			clk_out <= 0;
+			clk_out <= 1'b0;
+			count <= 3'b111;
 		end
 		else if (count == 5) begin
-			count   <= 0;
 			clk_out <= ~clk_out;
+			count <= 0;
 		end
-		else
-			count   <= count + 1;
+		else begin
+			count <= count + 1;
+		end
 	end
 endmodule

@@ -26,7 +26,7 @@ IVL = iverilog
 IVLFLAGS = -t$(IVLTARGET) -Wall
 IVLTARGET = vvp
 
-SIMS = addr_decode_sim clk_div_sim fifo_bridge_sim
+SIMS = addr_decode_sim clk_div_sim fifo_mux_sim
 
 .PHONY:	all clean
 
@@ -41,5 +41,5 @@ addr_decode_sim: addr_decode_sim.v addr_decode.v
 clk_div_sim: clk_div_sim.v clk_div.v
 	$(IVL) $(IVLFLAGS) -o $@ $^
 
-fifo_bridge_sim: fifo_bridge_sim.v fifo_bridge.v
+fifo_mux_sim: fifo_mux_sim.v fifo_mux.v
 	$(IVL) $(IVLFLAGS) -o $@ $^

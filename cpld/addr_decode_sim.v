@@ -27,14 +27,12 @@
 `timescale 1ns / 10ps
 
 module addr_decode_sim;
-	reg  enable;
 	reg  [3:0] addr;
 	wire r, s, t, x, y, z;
 
 	integer i;
 
 	addr_decode addr_decode(
-		.enable(enable),
 		.addr(addr),
 		.r(r),
 		.s(s),
@@ -44,14 +42,12 @@ module addr_decode_sim;
 		.z(z)
 	);
 
-	initial $monitor($time, " enable=%b addr=%b r=%b s=%b t=%b x=%b y=%b z=%b",
-			 enable, addr, r, s, t, x, y, z);
+	initial $monitor($time, " addr=%b r=%b s=%b t=%b x=%b y=%b z=%b",
+			 addr, r, s, t, x, y, z);
 
 	initial begin
 		for (i = 0; i < 16; i = i + 1) begin
-			#500 enable <= 0;
-			     addr   <= i;
-			#500 enable <= 1;
+		     #1000 addr <= i;
 		end
 	end
 endmodule

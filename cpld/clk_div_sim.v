@@ -44,7 +44,7 @@ module clk_div_sim;
 
 	initial begin
 		reset  <= 0;
-		clk_in <= 0;
+		clk_in <= 1;
 
 		#1    reset <= 1;
 		#1992 $finish; // 48:4

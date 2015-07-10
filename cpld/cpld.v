@@ -29,13 +29,14 @@
 module cpld(input  reset,
 	    input  clk_in,
 	    output clk_out,
-	    input  enable,
 	    input  [3:0] addr,
 	    output r, s, t, x, y, z,
-	    output ca1, cb1,
-	    input  ca2, cb2,
-	    output [6:0] pa,
-	    input  [6:0] pb,
+	    input  pia_e,
+	    output pia_ca1, pia_cb1,
+	    input  pia_ca2, pia_cb2,
+	    output [6:0] pia_pa,
+	    input  [6:0] pia_pb,
+	    output pia_da,
 	    input  fifo_rxf, fifo_txf,
 	    output fifo_rd, fifo_wr,
 	    inout  [6:0] fifo_data);
@@ -47,7 +48,6 @@ module cpld(input  reset,
 	);
 
 	addr_decode addr_decode(
-		.enable(enable),
 		.addr(addr),
 		.r(r),
 		.s(s),
@@ -57,14 +57,17 @@ module cpld(input  reset,
 		.z(z)
 	);
 
-	fifo_bridge fifo_bridge(
-		.enable(enable),
-		.ca1(ca1),
-		.cb1(cb1),
-		.ca2(ca2),
-		.cb2(cb2),
-		.pa(pa),
-		.pb(pb),
+	fifo_mux fifo_mux(
+		.reset(reset),
+		.clk(clk_in),
+		.pia_e(pia_e),
+		.pia_ca1(pia_ca1),
+		.pia_cb1(pia_cb1),
+		.pia_ca2(pia_ca2),
+		.pia_cb2(pia_cb2),
+		.pia_pa(pia_pa),
+		.pia_pb(pia_pb),
+		.pia_da(pia_da),
 		.fifo_rxf(fifo_rxf),
 		.fifo_txe(fifo_txe),
 		.fifo_rd(fifo_rd),

@@ -35,7 +35,7 @@
 /cpld/isim.*
 /cpld/addr_decode_sim
 /cpld/clk_div_sim
-/cpld/fifo_bridge_sim
+/cpld/fifo_mux_sim
 /cpld/xilinxsim.ini
 /eagle/*.[bls]#*
 /eagle/*.pro
