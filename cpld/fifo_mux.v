@@ -106,6 +106,6 @@ module fifo_mux(input  reset,
 		end
 	end
 
-	assign pia_da = pia_cb2 || fifo_txe;
+	assign pia_da = !pia_cb2 || fifo_txe;
 	assign fifo_data = (state & STATE_WRITE_MASK) ? fifo_data_out : 7'bz;
 endmodule
