@@ -42,7 +42,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -123,10 +123,12 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>&lt;b&gt;Apple-1 Mini Library&lt;/b&gt;
+&lt;p&gt;
+Source: &lt;a href="http://github.com/sstallion/apple-mini/"&gt;http://github.com/sstallion/apple-mini/&lt;/a&gt;</description>
 <packages>
 <package name="SSOP24">
-<description>&lt;b&gt;Small Shrink Outline Package&lt;/b&gt;&lt;p&gt;
-SOT340-1 / JEDEC MO-150AG</description>
+<description>&lt;b&gt;Small Shrink Outline Package&lt;/b&gt;</description>
 <wire x1="-4.128" y1="-2.536" x2="4.128" y2="-2.536" width="0.1524" layer="51"/>
 <wire x1="4.128" y1="-2.536" x2="4.128" y2="2.536" width="0.1524" layer="51"/>
 <wire x1="4.128" y1="2.536" x2="-4.128" y2="2.536" width="0.1524" layer="51"/>
@@ -155,47 +157,27 @@ SOT340-1 / JEDEC MO-150AG</description>
 <smd name="22" x="-2.275" y="3.42" dx="0.4" dy="1.2" layer="1"/>
 <smd name="23" x="-2.925" y="3.42" dx="0.4" dy="1.2" layer="1"/>
 <smd name="24" x="-3.575" y="3.42" dx="0.4" dy="1.2" layer="1"/>
-<text x="-4.4704" y="0" size="1.27" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
-<rectangle x1="-3.725" y1="-3.8" x2="-3.425" y2="-2.6" layer="51"/>
-<rectangle x1="-3.075" y1="-3.8" x2="-2.775" y2="-2.6" layer="51"/>
-<rectangle x1="-2.425" y1="-3.8" x2="-2.125" y2="-2.6" layer="51"/>
-<rectangle x1="-1.775" y1="-3.8" x2="-1.475" y2="-2.6" layer="51"/>
-<rectangle x1="-1.125" y1="-3.8" x2="-0.825" y2="-2.6" layer="51"/>
-<rectangle x1="-0.475" y1="-3.8" x2="-0.175" y2="-2.6" layer="51"/>
-<rectangle x1="0.175" y1="-3.8" x2="0.475" y2="-2.6" layer="51"/>
-<rectangle x1="0.825" y1="-3.8" x2="1.125" y2="-2.6" layer="51"/>
-<rectangle x1="1.475" y1="-3.8" x2="1.775" y2="-2.6" layer="51"/>
-<rectangle x1="2.125" y1="-3.8" x2="2.425" y2="-2.6" layer="51"/>
-<rectangle x1="2.775" y1="-3.8" x2="3.075" y2="-2.6" layer="51"/>
-<rectangle x1="3.425" y1="-3.8" x2="3.725" y2="-2.6" layer="51"/>
-<rectangle x1="3.425" y1="2.6" x2="3.725" y2="3.8" layer="51"/>
-<rectangle x1="2.775" y1="2.6" x2="3.075" y2="3.8" layer="51"/>
-<rectangle x1="2.125" y1="2.6" x2="2.425" y2="3.8" layer="51"/>
-<rectangle x1="1.475" y1="2.6" x2="1.775" y2="3.8" layer="51"/>
-<rectangle x1="0.825" y1="2.6" x2="1.125" y2="3.8" layer="51"/>
-<rectangle x1="0.175" y1="2.6" x2="0.475" y2="3.8" layer="51"/>
-<rectangle x1="-0.475" y1="2.6" x2="-0.175" y2="3.8" layer="51"/>
-<rectangle x1="-1.125" y1="2.6" x2="-0.825" y2="3.8" layer="51"/>
-<rectangle x1="-1.775" y1="2.6" x2="-1.475" y2="3.8" layer="51"/>
-<rectangle x1="-2.425" y1="2.6" x2="-2.125" y2="3.8" layer="51"/>
-<rectangle x1="-3.075" y1="2.6" x2="-2.775" y2="3.8" layer="51"/>
-<rectangle x1="-3.725" y1="2.6" x2="-3.425" y2="3.8" layer="51"/>
+<text x="-4.763" y="0" size="1.27" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-4.21" y="-4.655" radius="0.3175" width="0" layer="21"/>
 </package>
-<package name="USBMICROB">
-<description>&lt;b&gt;FCI Micro USB Type B Receptacle&lt;/b&gt;</description>
-<pad name="8" x="1.45" y="-3.3" drill="0.95"/>
-<pad name="6" x="1.45" y="3.3" drill="0.95"/>
-<smd name="7" x="4.35" y="3.3" dx="1.4" dy="1.4" layer="1"/>
-<smd name="9" x="4.35" y="-3.3" dx="1.4" dy="1.4" layer="1"/>
+<package name="10118193">
+<description>&lt;b&gt;Micro USB Type B Receptacle&lt;/b&gt;</description>
+<pad name="7" x="1.45" y="-3.3" drill="0.9"/>
+<pad name="8" x="1.45" y="3.3" drill="0.9"/>
+<smd name="9" x="4.35" y="3.3" dx="1.4" dy="1.4" layer="1"/>
+<smd name="6" x="4.35" y="-3.3" dx="1.4" dy="1.4" layer="1"/>
 <smd name="2" x="4.8" y="0.65" dx="0.4" dy="1.35" layer="1" rot="R90"/>
 <smd name="3" x="4.8" y="0" dx="0.4" dy="1.35" layer="1" rot="R90"/>
 <smd name="1" x="4.8" y="1.3" dx="0.4" dy="1.35" layer="1" rot="R90"/>
 <smd name="5" x="4.8" y="-1.3" dx="0.4" dy="1.35" layer="1" rot="R90"/>
 <smd name="4" x="4.8" y="-0.65" dx="0.4" dy="1.35" layer="1" rot="R90"/>
-<wire x1="0" y1="-4" x2="0" y2="4" width="0" layer="51"/>
-<text x="6.35" y="4.445" size="1.27" layer="25" font="vector" align="bottom-right">&gt;NAME</text>
-<text x="-1.27" y="0" size="1.016" layer="51" font="vector" rot="R90" align="center">PCB EDGE</text>
+<wire x1="0" y1="-4" x2="0" y2="4.445" width="0" layer="51"/>
+<text x="3.175" y="5.08" size="1.27" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="-0.635" y="0" size="1.27" layer="51" font="vector" rot="R90" align="bottom-center">PCB EDGE</text>
+<wire x1="0" y1="4.445" x2="6.35" y2="4.445" width="0.127" layer="51"/>
+<wire x1="6.35" y1="4.445" x2="6.35" y2="-4.445" width="0.127" layer="51"/>
+<wire x1="6.35" y1="-4.445" x2="0" y2="-4.445" width="0.127" layer="51"/>
+<wire x1="0" y1="-4.445" x2="0" y2="4.445" width="0.127" layer="51"/>
 </package>
 <package name="SOIC8">
 <description>&lt;b&gt;Small Outline IC&lt;/b&gt;</description>
@@ -211,102 +193,105 @@ SOT340-1 / JEDEC MO-150AG</description>
 <smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-3.175" y="-1.905" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
-<text x="3.175" y="-1.905" size="1.27" layer="27" font="vector" rot="R90" align="top-left">&gt;VALUE</text>
-<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
-<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
-<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
-<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
-<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
-<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+<text x="-3.035" y="0" size="1.27" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-2.54" y="-4.335" radius="0.3175" width="0" layer="21"/>
 </package>
-<package name="JTAG">
-<pad name="VREF" x="-6.35" y="0" drill="0.8128"/>
-<pad name="GND" x="-3.81" y="0" drill="0.8128"/>
-<pad name="TCK" x="-1.27" y="0" drill="0.8128"/>
-<pad name="TDO" x="1.27" y="0" drill="0.8128"/>
-<pad name="TDI" x="3.81" y="0" drill="0.8128"/>
-<pad name="TMS" x="6.35" y="0" drill="0.8128"/>
-<text x="-7.62" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<wire x1="-7.62" y1="1.27" x2="-7.62" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-1.27" x2="7.62" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-1.27" x2="7.62" y2="1.27" width="0.127" layer="21"/>
-<wire x1="7.62" y1="1.27" x2="-7.62" y2="1.27" width="0.127" layer="21"/>
-<polygon width="0.127" layer="21">
-<vertex x="-6.35" y="-1.778"/>
-<vertex x="-7.62" y="-4.318"/>
-<vertex x="-5.08" y="-4.318"/>
-</polygon>
+<package name="M22DRTN">
+<description>&lt;b&gt;Card Edge Connector&lt;/b&gt;</description>
+<pad name="10" x="-5.9436" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="11" x="-1.9812" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="L" x="-5.9436" y="1.778" drill="1.3" rot="R90"/>
+<pad name="M" x="-1.9812" y="1.778" drill="1.3" rot="R90"/>
+<pad name="12" x="1.9812" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="N" x="1.9812" y="1.778" drill="1.3" rot="R90"/>
+<pad name="9" x="-9.906" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="K" x="-9.906" y="1.778" drill="1.3" rot="R90"/>
+<pad name="8" x="-13.8684" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="J" x="-13.8684" y="1.778" drill="1.3" rot="R90"/>
+<pad name="7" x="-17.8308" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="H" x="-17.8308" y="1.778" drill="1.3" rot="R90"/>
+<pad name="F" x="-21.7932" y="1.778" drill="1.3" rot="R90"/>
+<pad name="6" x="-21.7932" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="5" x="-25.7556" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="E" x="-25.7556" y="1.778" drill="1.3" rot="R90"/>
+<pad name="13" x="5.9436" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="P" x="5.9436" y="1.778" drill="1.3" rot="R90"/>
+<pad name="R" x="9.906" y="1.778" drill="1.3" rot="R90"/>
+<pad name="14" x="9.906" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="15" x="13.8684" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="S" x="13.8684" y="1.778" drill="1.3" rot="R90"/>
+<pad name="16" x="17.8308" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="T" x="17.8308" y="1.778" drill="1.3" rot="R90"/>
+<pad name="17" x="21.7932" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="U" x="21.7932" y="1.778" drill="1.3" rot="R90"/>
+<pad name="4" x="-29.718" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="D" x="-29.718" y="1.778" drill="1.3" rot="R90"/>
+<pad name="3" x="-33.6804" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="C" x="-33.6804" y="1.778" drill="1.3" rot="R90"/>
+<pad name="18" x="25.7556" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="V" x="25.7556" y="1.778" drill="1.3" rot="R90"/>
+<pad name="19" x="29.718" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="W" x="29.718" y="1.778" drill="1.3" rot="R90"/>
+<pad name="20" x="33.6804" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="X" x="33.6804" y="1.778" drill="1.3" rot="R90"/>
+<pad name="21" x="37.6428" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="Y" x="37.6428" y="1.778" drill="1.3" rot="R90"/>
+<pad name="22" x="41.6052" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="Z" x="41.6052" y="1.778" drill="1.3" rot="R90"/>
+<pad name="2" x="-37.6428" y="-1.778" drill="1.3" rot="R90"/>
+<pad name="B" x="-37.6428" y="1.778" drill="1.3" rot="R90"/>
+<pad name="1" x="-41.6052" y="-1.778" drill="1.3" rot="R90" first="yes"/>
+<pad name="A" x="-41.6052" y="1.778" drill="1.3" rot="R90"/>
+<text x="-47.1932" y="4.7625" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-47.1932" y1="-4.1275" x2="-47.1932" y2="4.1275" width="0.127" layer="51"/>
+<wire x1="-47.1932" y1="4.1275" x2="47.1932" y2="4.1275" width="0.127" layer="51"/>
+<wire x1="47.1932" y1="4.1275" x2="47.1932" y2="-4.1275" width="0.127" layer="51"/>
+<wire x1="47.1932" y1="-4.1275" x2="-47.1932" y2="-4.1275" width="0.1016" layer="51"/>
+<text x="-47.8282" y="-1.778" size="1.016" layer="21" font="vector" align="center-right">1</text>
+<text x="-47.8282" y="1.778" size="1.016" layer="21" font="vector" align="center-right">A</text>
+<text x="47.8282" y="1.778" size="1.016" layer="21" font="vector" align="center-left">Z</text>
+<text x="47.8282" y="-1.778" size="1.016" layer="21" font="vector" align="center-left">22</text>
 </package>
-<package name="TACTSW">
-<description>&lt;b&gt;C&amp;K PTS645 Series 6mm Tact Switch&lt;/b&gt;</description>
-<pad name="4" x="3.2512" y="-2.2479" drill="0.9906"/>
-<pad name="2" x="3.2512" y="2.2479" drill="0.9906"/>
-<pad name="1" x="-3.2512" y="2.2479" drill="0.9906"/>
-<pad name="3" x="-3.2512" y="-2.2479" drill="0.9906"/>
-<circle x="0" y="0" radius="1.905" width="0.127" layer="51"/>
-<wire x1="-2.9972" y1="2.6162" x2="-2.9972" y2="-2.6162" width="0.127" layer="51"/>
-<wire x1="-2.9972" y1="-2.6162" x2="-2.6162" y2="-2.9972" width="0.127" layer="51" curve="90"/>
-<wire x1="-2.6162" y1="-2.9972" x2="2.6162" y2="-2.9972" width="0.127" layer="51"/>
-<wire x1="2.6162" y1="-2.9972" x2="2.9972" y2="-2.6162" width="0.127" layer="51" curve="90"/>
-<wire x1="2.9972" y1="-2.6162" x2="2.9972" y2="2.6162" width="0.127" layer="51"/>
-<wire x1="2.9972" y1="2.6162" x2="2.6162" y2="2.9972" width="0.127" layer="51" curve="90"/>
-<wire x1="2.6162" y1="2.9972" x2="-2.6162" y2="2.9972" width="0.127" layer="51"/>
-<wire x1="-2.6162" y1="2.9972" x2="-2.9972" y2="2.6162" width="0.127" layer="51" curve="90"/>
-<text x="0" y="3.81" size="1.27" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<package name="SMTR92">
+<description>&lt;b&gt;Tactile Switch&lt;/b&gt;</description>
+<smd name="2" x="3.975" y="2.25" dx="1.55" dy="1.3" layer="1"/>
+<smd name="4" x="3.975" y="-2.25" dx="1.55" dy="1.3" layer="1"/>
+<smd name="3" x="-3.975" y="-2.25" dx="1.55" dy="1.3" layer="1"/>
+<smd name="1" x="-3.975" y="2.25" dx="1.55" dy="1.3" layer="1"/>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.127" layer="51"/>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="51"/>
+<wire x1="3" y1="-3" x2="3" y2="3" width="0.127" layer="51"/>
+<wire x1="3" y1="3" x2="-3" y2="3" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1.75" width="0.127" layer="51"/>
+<text x="0" y="3.635" size="1.27" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="CON2X22">
-<pad name="10" x="-1.778" y="5.9436" drill="1.3"/>
-<pad name="11" x="-1.778" y="1.9812" drill="1.3"/>
-<pad name="L" x="1.778" y="5.9436" drill="1.3"/>
-<pad name="M" x="1.778" y="1.9812" drill="1.3"/>
-<pad name="12" x="-1.778" y="-1.9812" drill="1.3"/>
-<pad name="N" x="1.778" y="-1.9812" drill="1.3"/>
-<pad name="9" x="-1.778" y="9.906" drill="1.3"/>
-<pad name="K" x="1.778" y="9.906" drill="1.3"/>
-<pad name="8" x="-1.778" y="13.8684" drill="1.3"/>
-<pad name="J" x="1.778" y="13.8684" drill="1.3"/>
-<pad name="7" x="-1.778" y="17.8308" drill="1.3"/>
-<pad name="H" x="1.778" y="17.8308" drill="1.3"/>
-<pad name="F" x="1.778" y="21.7932" drill="1.3"/>
-<pad name="6" x="-1.778" y="21.7932" drill="1.3"/>
-<pad name="5" x="-1.778" y="25.7556" drill="1.3"/>
-<pad name="E" x="1.778" y="25.7556" drill="1.3"/>
-<pad name="13" x="-1.778" y="-5.9436" drill="1.3"/>
-<pad name="P" x="1.778" y="-5.9436" drill="1.3"/>
-<pad name="R" x="1.778" y="-9.906" drill="1.3"/>
-<pad name="14" x="-1.778" y="-9.906" drill="1.3"/>
-<pad name="15" x="-1.778" y="-13.8684" drill="1.3"/>
-<pad name="S" x="1.778" y="-13.8684" drill="1.3"/>
-<pad name="16" x="-1.778" y="-17.8308" drill="1.3"/>
-<pad name="T" x="1.778" y="-17.8308" drill="1.3"/>
-<pad name="17" x="-1.778" y="-21.7932" drill="1.3"/>
-<pad name="U" x="1.778" y="-21.7932" drill="1.3"/>
-<pad name="4" x="-1.778" y="29.718" drill="1.3"/>
-<pad name="D" x="1.778" y="29.718" drill="1.3"/>
-<pad name="3" x="-1.778" y="33.6804" drill="1.3"/>
-<pad name="C" x="1.778" y="33.6804" drill="1.3"/>
-<pad name="18" x="-1.778" y="-25.7556" drill="1.3"/>
-<pad name="V" x="1.778" y="-25.7556" drill="1.3"/>
-<pad name="19" x="-1.778" y="-29.718" drill="1.3"/>
-<pad name="W" x="1.778" y="-29.718" drill="1.3"/>
-<pad name="20" x="-1.778" y="-33.6804" drill="1.3"/>
-<pad name="X" x="1.778" y="-33.6804" drill="1.3"/>
-<pad name="21" x="-1.778" y="-37.6428" drill="1.3"/>
-<pad name="Y" x="1.778" y="-37.6428" drill="1.3"/>
-<pad name="22" x="-1.778" y="-41.6052" drill="1.3"/>
-<pad name="Z" x="1.778" y="-41.6052" drill="1.3"/>
-<pad name="2" x="-1.778" y="37.6428" drill="1.3"/>
-<pad name="B" x="1.778" y="37.6428" drill="1.3"/>
-<pad name="1" x="-1.778" y="41.6052" drill="1.3"/>
-<pad name="A" x="1.778" y="41.6052" drill="1.3"/>
-<text x="0" y="49.53" size="1.27" layer="25" font="vector" align="top-center">&gt;NAME</text>
-<wire x1="-4.1275" y1="47.1932" x2="4.1275" y2="47.1932" width="0.127" layer="51"/>
-<wire x1="4.1275" y1="47.1932" x2="4.1275" y2="-47.1932" width="0.127" layer="51"/>
-<wire x1="4.1275" y1="-47.1932" x2="-4.1275" y2="-47.1932" width="0.127" layer="51"/>
-<wire x1="-4.1275" y1="-47.1932" x2="-4.1275" y2="47.1932" width="0.127" layer="51"/>
+<package name="PH07-2-SMT">
+<description>&lt;b&gt;Pin Header&lt;/b&gt;</description>
+<smd name="10" x="2" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="12" x="4" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="14" x="6" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="8" x="0" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="6" x="-2" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="4" x="-4" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="2" x="-6" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="1" x="-6" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="3" x="-4" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="5" x="-2" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="7" x="0" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="9" x="2" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="11" x="4" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="13" x="6" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<wire x1="-8.325" y1="3.175" x2="-8.325" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="-8.325" y1="-3.175" x2="8.325" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="8.325" y1="-3.175" x2="8.325" y2="3.175" width="0.127" layer="51"/>
+<wire x1="8.325" y1="3.175" x2="-8.325" y2="3.175" width="0.127" layer="51"/>
+<hole x="-5" y="0" drill="1"/>
+<hole x="5" y="0" drill="1"/>
+<text x="-8.325" y="4.13499375" size="1.27" layer="27" font="vector">&gt;NAME</text>
+<text x="-8.96" y="-2.125" size="1.016" layer="21" font="vector" align="center-right">1</text>
+<text x="-8.96" y="2.125" size="1.016" layer="21" font="vector" align="center-right">2</text>
+<text x="8.96" y="2.125" size="1.016" layer="21" font="vector" align="center-left">14</text>
+<text x="8.96" y="-2.125" size="1.016" layer="21" font="vector" align="center-left">13</text>
 </package>
 </packages>
 <symbols>
@@ -341,10 +326,8 @@ SOT340-1 / JEDEC MO-150AG</description>
 </symbol>
 <symbol name="PWRN">
 <text x="0" y="0" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="1.27" y="-5.08" size="1.27" layer="95" font="vector" rot="R90" align="center">GND</text>
-<text x="1.27" y="5.08" size="1.27" layer="96" font="vector" rot="R90" align="center">VCC</text>
-<pin name="GND" x="0" y="-7.62" visible="off" length="middle" direction="pwr" rot="R90"/>
-<pin name="VCC" x="0" y="7.62" visible="off" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="VCC" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
 </symbol>
 <symbol name="NC">
 <wire x1="-0.635" y1="-0.635" x2="0.635" y2="0.635" width="0.127" layer="94"/>
@@ -358,14 +341,14 @@ SOT340-1 / JEDEC MO-150AG</description>
 <wire x1="-3.81" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
 <wire x1="2.54" y1="7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-7.62" x2="-3.81" y2="-7.62" width="0.254" layer="94"/>
-<text x="-3.81" y="10.16" size="1.778" layer="95" align="top-left">&gt;NAME</text>
-<text x="-1.27" y="0" size="2.54" layer="94" ratio="10" rot="R90" align="center">USB</text>
-<text x="7.62" y="-4.7625" size="1.27" layer="97" align="bottom-right">GND</text>
-<text x="7.62" y="0.3175" size="1.27" layer="97" align="bottom-right">D+</text>
-<text x="7.62" y="5.3975" size="1.27" layer="97" align="bottom-right">VBUS</text>
+<text x="-3.81" y="10.16" size="1.778" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="-1.27" y="0" size="2.54" layer="94" font="vector" ratio="10" rot="R90" align="center">USB</text>
+<text x="3.175" y="-4.7625" size="1.524" layer="97" font="vector">GND</text>
+<text x="3.175" y="0.3175" size="1.524" layer="97" font="vector">D+</text>
+<text x="3.175" y="5.3975" size="1.524" layer="97" font="vector">VBUS</text>
 <pin name="4" x="7.62" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-<text x="7.62" y="2.8575" size="1.27" layer="97" align="bottom-right">D-</text>
-<text x="7.62" y="-2.2225" size="1.27" layer="97" align="bottom-right">ID</text>
+<text x="3.175" y="2.8575" size="1.524" layer="97">D-</text>
+<text x="3.175" y="-2.2225" size="1.524" layer="97" font="vector">ID</text>
 </symbol>
 <symbol name="TPS2082">
 <wire x1="-10.16" y1="22.86" x2="-10.16" y2="-25.4" width="0.254" layer="94"/>
@@ -383,11 +366,6 @@ SOT340-1 / JEDEC MO-150AG</description>
 <text x="-10.16" y="-27.94" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 <pin name="GND" x="-12.7" y="-22.86" length="short" direction="pwr"/>
 </symbol>
-<symbol name="5V_IN">
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<text x="0" y="0.635" size="1.27" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
-<pin name="5V_IN" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-0.508" x2="1.27" y2="-0.508" width="0.254" layer="94"/>
@@ -395,19 +373,9 @@ SOT340-1 / JEDEC MO-150AG</description>
 <wire x1="-0.09525" y1="-1.524" x2="0.09525" y2="-1.524" width="0.254" layer="94"/>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="5V">
+<symbol name="VCC">
 <wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<text x="0" y="0.635" size="1.27" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
-<pin name="5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-<symbol name="3V3_IN">
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<text x="0" y="0.635" size="1.27" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
-<pin name="3V3_IN" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-<symbol name="3V3">
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<text x="0" y="0.635" size="1.27" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="2.54" size="1.524" layer="96" font="vector" align="top-center">&gt;VALUE</text>
 <pin name="3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="JTAG">
@@ -420,13 +388,13 @@ SOT340-1 / JEDEC MO-150AG</description>
 <wire x1="2.54" y1="-10.16" x2="-3.81" y2="-10.16" width="0.254" layer="94"/>
 <text x="-3.81" y="10.16" size="1.778" layer="95" font="vector" align="top-left">&gt;NAME</text>
 <text x="-1.27" y="-1.27" size="2.54" layer="94" font="vector" ratio="10" rot="R90" align="center">JTAG</text>
-<text x="7.62" y="-4.7625" size="1.27" layer="97" font="vector" align="bottom-right">TMS</text>
-<text x="7.62" y="-2.2225" size="1.27" layer="97" font="vector" align="bottom-right">TDO</text>
-<text x="7.62" y="5.3975" size="1.27" layer="97" font="vector" align="bottom-right">VREF</text>
+<text x="3.175" y="-4.7625" size="1.524" layer="97" font="vector">TMS</text>
+<text x="3.175" y="-2.2225" size="1.524" layer="97" font="vector">TDO</text>
+<text x="3.175" y="5.3975" size="1.524" layer="97" font="vector">VREF</text>
 <pin name="TDI" x="7.62" y="0" visible="off" length="middle" direction="in" rot="R180"/>
-<text x="7.62" y="2.8575" size="1.27" layer="97" font="vector" align="bottom-right">TCK</text>
-<text x="7.62" y="0.3175" size="1.27" layer="97" font="vector" align="bottom-right">TDI</text>
-<text x="7.62" y="-7.3025" size="1.27" layer="97" font="vector" align="bottom-right">GND</text>
+<text x="3.175" y="2.8575" size="1.524" layer="97" font="vector">TCK</text>
+<text x="3.175" y="0.3175" size="1.524" layer="97" font="vector">TDI</text>
+<text x="3.175" y="-7.3025" size="1.524" layer="97" font="vector">GND</text>
 <pin name="GND" x="7.62" y="-7.62" visible="off" length="middle" direction="pwr" rot="R180"/>
 </symbol>
 <symbol name="TACTSW">
@@ -437,9 +405,13 @@ SOT340-1 / JEDEC MO-150AG</description>
 <wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.127" layer="94"/>
 <wire x1="0" y1="1.27" x2="-1.27" y2="0" width="0.127" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.127" layer="94"/>
-<text x="0" y="5.08" size="1.778" layer="95" align="top-center">&gt;NAME</text>
+<text x="0" y="5.08" size="1.778" layer="95" font="vector" align="top-center">&gt;NAME</text>
+<text x="-2.54" y="1.27" size="1.524" layer="95" font="vector" align="center">1</text>
+<text x="2.54" y="1.27" size="1.524" layer="95" font="vector" align="center">2</text>
+<text x="2.54" y="-3.81" size="1.524" layer="95" font="vector" align="center">4</text>
+<text x="-2.54" y="-3.81" size="1.524" layer="95" font="vector" align="center">3</text>
 </symbol>
-<symbol name="CON2X22">
+<symbol name="PH22-2">
 <wire x1="2.54" y1="27.94" x2="-5.08" y2="27.94" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-30.48" x2="-5.08" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-27.94" x2="-5.08" y2="-25.4" width="0.254" layer="94"/>
@@ -590,17 +562,62 @@ SOT340-1 / JEDEC MO-150AG</description>
 <pin name="22" x="-7.62" y="-27.94" visible="pad" length="short" direction="pas"/>
 <pin name="Z" x="5.08" y="-27.94" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="TITLE">
+<wire x1="106.68" y1="27.94" x2="38.1" y2="27.94" width="0.254" layer="94"/>
+<wire x1="38.1" y1="27.94" x2="0" y2="27.94" width="0.254" layer="94"/>
+<wire x1="0" y1="27.94" x2="0" y2="21.59" width="0.254" layer="94"/>
+<wire x1="0" y1="21.59" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="38.1" y2="0" width="0.254" layer="94"/>
+<wire x1="38.1" y1="0" x2="81.28" y2="0" width="0.254" layer="94"/>
+<wire x1="81.28" y1="0" x2="106.68" y2="0" width="0.254" layer="94"/>
+<wire x1="106.68" y1="0" x2="106.68" y2="5.08" width="0.254" layer="94"/>
+<wire x1="106.68" y1="5.08" x2="106.68" y2="15.24" width="0.254" layer="94"/>
+<wire x1="106.68" y1="15.24" x2="106.68" y2="27.94" width="0.254" layer="94"/>
+<wire x1="38.1" y1="27.94" x2="38.1" y2="21.59" width="0.254" layer="94"/>
+<wire x1="38.1" y1="21.59" x2="38.1" y2="15.24" width="0.254" layer="94"/>
+<wire x1="38.1" y1="15.24" x2="38.1" y2="5.08" width="0.254" layer="94"/>
+<wire x1="38.1" y1="5.08" x2="38.1" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="21.59" x2="38.1" y2="21.59" width="0.254" layer="94"/>
+<wire x1="38.1" y1="15.24" x2="63.5" y2="15.24" width="0.254" layer="94"/>
+<wire x1="63.5" y1="15.24" x2="93.98" y2="15.24" width="0.254" layer="94"/>
+<wire x1="93.98" y1="15.24" x2="106.68" y2="15.24" width="0.254" layer="94"/>
+<wire x1="38.1" y1="5.08" x2="63.5" y2="5.08" width="0.254" layer="94"/>
+<wire x1="63.5" y1="5.08" x2="81.28" y2="5.08" width="0.254" layer="94"/>
+<wire x1="81.28" y1="5.08" x2="93.98" y2="5.08" width="0.254" layer="94"/>
+<wire x1="93.98" y1="5.08" x2="106.68" y2="5.08" width="0.254" layer="94"/>
+<wire x1="81.28" y1="0" x2="81.28" y2="5.08" width="0.254" layer="94"/>
+<wire x1="93.98" y1="5.08" x2="93.98" y2="15.24" width="0.254" layer="94"/>
+<wire x1="63.5" y1="5.08" x2="63.5" y2="15.24" width="0.254" layer="94"/>
+<text x="59.69" y="2.54" size="1.778" layer="94" font="vector" align="center">&gt;SHEET_NAME</text>
+<text x="96.52" y="2.54" size="1.778" layer="94" font="vector" align="center-left">&gt;SHEET</text>
+<text x="86.36" y="2.54" size="1.778" layer="94" font="vector" align="center-left">SHEET</text>
+<text x="50.8" y="10.16" size="1.778" layer="94" font="vector" align="center">&gt;DRAWING_NAME</text>
+<text x="1.27" y="26.67" size="1.27" layer="94" font="vector" ratio="10" align="center-left">DRAWN BY</text>
+<text x="1.27" y="19.05" size="1.27" layer="94" font="vector" ratio="10">COMMENTS</text>
+<text x="100.33" y="10.16" size="3.048" layer="94" font="vector" align="center">&gt;REV</text>
+<text x="78.74" y="10.16" size="1.778" layer="94" font="vector" align="center">&gt;LAST_DATE_TIME</text>
+<text x="40.64" y="22.86" size="3.048" layer="94" font="vector" align="center-left">&gt;TITLE</text>
+<text x="1.27" y="22.86" size="1.778" layer="94" font="vector">&gt;AUTHOR</text>
+<text x="40.64" y="17.78" size="1.524" layer="94" font="vector">&gt;SUBTITLE</text>
+<text x="19.05" y="3.81" size="1.27" layer="94" font="vector" ratio="10" align="center">USE OF THIS DESIGN IS GOVERNED
+BY A BSD-STYLE LICENSE THAT CAN
+BE FOUND IN THE LICENSE FILE</text>
+<text x="1.27" y="15.24" size="1.778" layer="94" font="vector">&gt;COMMENTS</text>
+<text x="39.37" y="13.97" size="1.27" layer="94" font="vector" ratio="10" align="center-left">DRAWING NAME</text>
+<text x="64.77" y="13.97" size="1.27" layer="94" font="vector" ratio="10" align="center-left">DATE</text>
+<text x="95.25" y="13.97" size="1.27" layer="94" font="vector" ratio="10" align="center-left">REV</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FT240X" prefix="U">
 <description>&lt;b&gt;FTDI FT240X Full Speed USB to 8-bit FIFO&lt;/b&gt;
 &lt;p&gt;
-This USB2.0 Full Speed  IC offers a compact bridge to 8 bit wide FIFO interfaces. The device is a FIFO, capable of operating up to 1 MByte/s, with low power consumption (8mA). The FT240X includes the complete FT-X series feature set and enables USB to be added into a system design quickly and easily over a 8 bit wide FIFO interface
+This USB2.0 Full Speed  IC offers a compact bridge to 8 bit wide FIFO interfaces. The device is a FIFO, capable of operating up to 1 MByte/s, with low power consumption (8mA). The FT240X includes the complete FT-X series feature set and enables USB to be added into a system design quickly and easily over a 8 bit wide FIFO interface.
 &lt;p&gt;
-&lt;a href="http://www.ftdichip.com/Products/ICs/FT240X.html"&gt;http://www.ftdichip.com/Products/ICs/FT240X.html&lt;/a&gt;</description>
+Source: &lt;a href="http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT240X.pdf"&gt;http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT240X.pdf&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="FT240X" x="0" y="0"/>
-<gate name="P" symbol="PWRN" x="-33.02" y="0" addlevel="request"/>
+<gate name="P" symbol="PWRN" x="-35.56" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="S" package="SSOP24">
@@ -630,12 +647,15 @@ This USB2.0 Full Speed  IC offers a compact bridge to 8 bit wide FIFO interfaces
 <connect gate="P" pin="VCC" pad="18"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PARTNO" value="FT240XS"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="NC" prefix="NC">
+<description>&lt;b&gt;No Connection&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="NC" x="0" y="0"/>
 </gates>
@@ -650,12 +670,14 @@ This USB2.0 Full Speed  IC offers a compact bridge to 8 bit wide FIFO interfaces
 </devices>
 </deviceset>
 <deviceset name="USBMICRO" prefix="J">
-<description>&lt;b&gt;FCI Micro USB Type B Receptacle&lt;/b&gt;</description>
+<description>&lt;b&gt;FCI Micro USB Type B Receptacle&lt;/b&gt;
+&lt;p&gt;
+Source: &lt;a href="http://portal.fciconnect.com/Comergent//fci/drawing/10118193.pdf"&gt;http://portal.fciconnect.com/Comergent//fci/drawing/10118193.pdf&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="USBMICRO" x="0" y="0"/>
 </gates>
 <devices>
-<device name="B" package="USBMICROB">
+<device name="" package="10118193">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -664,13 +686,15 @@ This USB2.0 Full Speed  IC offers a compact bridge to 8 bit wide FIFO interfaces
 <connect gate="G$1" pin="5" pad="5 6 7 8 9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PARTNO" value="10118193"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="TPS2082" prefix="U">
-<description>&lt;b&gt;TI TPS2082D High-Side MOSFET Switch IC&lt;/b&gt;
+<description>&lt;b&gt;TI TPS2082 Power Distribution Switch&lt;/b&gt;
 &lt;p&gt;
 The TPS2080, TPS2081, and TPS2082 dual and the
 TPS2085, TPS2086 and TPS2087 quad
@@ -678,7 +702,7 @@ power-distribution switches are intended for
 applications where heavy capacitive loads and short
 circuits are likely to be encountered.
 &lt;p&gt;
-&lt;a href="http://www.ti.com/product/tps2082"&gt;http://www.ti.com/product/tps2082&lt;/a&gt;</description>
+Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps2080.pdf"&gt;http://www.ti.com/lit/ds/symlink/tps2080.pdf&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="TPS2082" x="0" y="0"/>
 </gates>
@@ -695,14 +719,17 @@ circuits are likely to be encountered.
 <connect gate="G$1" pin="OUT2" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PARTNO" value="TPS2082D"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="5V_IN" prefix="5V_IN">
+<description>&lt;b&gt;Supply Symbol&lt;/b&gt;</description>
 <gates>
-<gate name="5V_IN" symbol="5V_IN" x="0" y="0"/>
+<gate name="5V_IN" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -713,6 +740,7 @@ circuits are likely to be encountered.
 </devices>
 </deviceset>
 <deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;Supply Symbol&lt;/b&gt;</description>
 <gates>
 <gate name="GND" symbol="GND" x="0" y="0"/>
 </gates>
@@ -725,8 +753,9 @@ circuits are likely to be encountered.
 </devices>
 </deviceset>
 <deviceset name="3V3_IN" prefix="3V3_IN">
+<description>&lt;b&gt;Supply Symbol&lt;/b&gt;</description>
 <gates>
-<gate name="3V3_IN" symbol="3V3_IN" x="0" y="0"/>
+<gate name="3V3_IN" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -737,8 +766,9 @@ circuits are likely to be encountered.
 </devices>
 </deviceset>
 <deviceset name="5V" prefix="5V">
+<description>&lt;b&gt;Supply Symbol&lt;/b&gt;</description>
 <gates>
-<gate name="5V" symbol="5V" x="0" y="0"/>
+<gate name="5V" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -749,8 +779,9 @@ circuits are likely to be encountered.
 </devices>
 </deviceset>
 <deviceset name="3V3" prefix="3V3">
+<description>&lt;b&gt;Supply Symbol&lt;/b&gt;</description>
 <gates>
-<gate name="3V3" symbol="3V3" x="0" y="0"/>
+<gate name="3V3" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -761,21 +792,26 @@ circuits are likely to be encountered.
 </devices>
 </deviceset>
 <deviceset name="JTAG" prefix="J">
+<description>&lt;b&gt;Xilinx JTAG Header&lt;/b&gt;
+&lt;p&gt;
+Source: &lt;a href="http://www.xilinx.com/support/documentation/data_sheets/ds593.pdf"&gt;http://www.xilinx.com/support/documentation/data_sheets/ds593.pdf&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="JTAG" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="JTAG">
+<device name="" package="PH07-2-SMT">
 <connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="TCK" pad="TCK"/>
-<connect gate="G$1" pin="TDI" pad="TDI"/>
-<connect gate="G$1" pin="TDO" pad="TDO"/>
-<connect gate="G$1" pin="TMS" pad="TMS"/>
-<connect gate="G$1" pin="VREF" pad="VREF"/>
+<connect gate="G$1" pin="GND" pad="3 5 7 9 11 13"/>
+<connect gate="G$1" pin="TCK" pad="6"/>
+<connect gate="G$1" pin="TDI" pad="10"/>
+<connect gate="G$1" pin="TDO" pad="8"/>
+<connect gate="G$1" pin="TMS" pad="4"/>
+<connect gate="G$1" pin="VREF" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PARTNO" value="0878321420"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -786,7 +822,7 @@ circuits are likely to be encountered.
 <gate name="G$1" symbol="TACTSW" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TACTSW">
+<device name="" package="SMTR92">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -794,18 +830,25 @@ circuits are likely to be encountered.
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PARTNO" value="PTS645SL50SMTR92"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CON2X22" prefix="J">
-<description>Sullins RBM22DRTN</description>
+<deviceset name="*M22D" prefix="J">
+<description>&lt;b&gt;Sullins 44 Contact Female Card Edge Connector&lt;/b&gt;
+&lt;p&gt;
+.156” [3.96 mm] Contact Centers, .431” [10.95 mm] Insulator Height,
+Dip Solder/Eyelet/Right Angle
+&lt;/p&gt;
+Source: &lt;a href="http://www.sullinscorp.com/catalogs/65_PAGE70-71_.156_LP_DS_EYE_RA.pdf"&gt;http://www.sullinscorp.com/catalogs/65_PAGE70-71_.156_LP_DS_EYE_RA.pdf&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="CON2X22" x="0" y="0"/>
+<gate name="G$1" symbol="PH22-2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CON2X22">
+<device name="RTN" package="M22DRTN">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -853,7 +896,24 @@ circuits are likely to be encountered.
 <connect gate="G$1" pin="Z" pad="Z"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="RB">
+<attribute name="PARTNO" value="RBM22DRTN"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TITLE" prefix="TITLE">
+<description>&lt;b&gt;Title Block&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="TITLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value=""/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -861,4 +921,10 @@ circuits are likely to be encountered.
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
