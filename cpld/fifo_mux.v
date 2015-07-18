@@ -27,6 +27,7 @@
 `timescale 1ns / 10ps
 
 module fifo_mux(input  reset,
+		input  clear,
 		input  clk,
 		input  pia_e,
 		output reg pia_ca1, pia_cb1,
@@ -36,7 +37,7 @@ module fifo_mux(input  reset,
 		output pia_da,
 		input  fifo_rxf, fifo_txe,
 		output reg fifo_rd, fifo_wr,
-		inout  [6:0] fifo_data);
+		inout  [7:0] fifo_data);
 
 	localparam STATE_READ_SETUP	   = 3'b000;
 	localparam STATE_READ_STROBE_LOW   = 3'b001;
@@ -47,7 +48,7 @@ module fifo_mux(input  reset,
 
 	localparam STATE_WRITE_MASK = 1<<2;
 
-	reg [6:0] fifo_data_out;
+	reg [7:0] fifo_data_out;
 	reg [2:0] state;
 
 	always @(posedge clk) begin
@@ -74,7 +75,7 @@ module fifo_mux(input  reset,
 
 			STATE_READ_STROBE_HIGH: begin
 				if (pia_ca2) begin
-					pia_pa <= fifo_data;
+					pia_pa <= fifo_data[6:0];
 					fifo_rd <= 1'b1;
 					pia_ca1 <= 1'b0;
 				end
@@ -83,7 +84,7 @@ module fifo_mux(input  reset,
 
 			STATE_WRITE_SETUP: begin
 				if (pia_cb2) begin
-					fifo_data_out <= pia_pb;
+					fifo_data_out <= {0'b0, pia_pb[6:0]};
 				end
 				state <= STATE_WRITE_STROBE_LOW;
 			end
@@ -98,7 +99,9 @@ module fifo_mux(input  reset,
 			STATE_WRITE_STROBE_HIGH: begin
 				if (pia_cb2) begin
 					fifo_wr <= 1'b1;
-					pia_cb1 <= 1'b0;
+					if (pia_cb2) begin
+						pia_cb1 <= 1'b0;
+					end
 				end
 				state <= STATE_READ_SETUP;
 			end
@@ -107,5 +110,5 @@ module fifo_mux(input  reset,
 	end
 
 	assign pia_da = !pia_cb2 || fifo_txe;
-	assign fifo_data = (state & STATE_WRITE_MASK) ? fifo_data_out : 7'bz;
+	assign fifo_data = (state & STATE_WRITE_MASK) ? fifo_data_out : 8'bz;
 endmodule

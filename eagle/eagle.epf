@@ -6,5 +6,6 @@ Globals="Globals"
 
 [Globals]
 AutoSaveProject=0
+UsedLibrary="apple-mini.lbr"
 UsedLibrary="/opt/eagle-7.3.0/lbr/led.lbr"
 UsedLibrary="/opt/eagle-7.3.0/lbr/rcl.lbr"

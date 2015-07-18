@@ -28,6 +28,7 @@
 
 module fifo_mux_sim;
 	reg  reset;
+	reg  clear;
 	reg  clk;
 	reg  pia_e;
 	wire pia_ca1, pia_cb1;
@@ -37,11 +38,12 @@ module fifo_mux_sim;
 	wire pia_da;
 	reg  fifo_rxf, fifo_txe;
 	wire fifo_rd, fifo_wr;
-	wire [6:0] fifo_data;
-	reg  [6:0] fifo_data_in;
+	wire [7:0] fifo_data;
+	reg  [7:0] fifo_data_in;
 
-	fifo_mux fifo_mux(
+	fifo_mux U(
 		.reset(reset),
+		.clear(clear),
 		.clk(clk),
 		.pia_e(pia_e),
 		.pia_ca1(pia_ca1),
@@ -66,6 +68,7 @@ module fifo_mux_sim;
 
 	initial begin
 		reset <= 0;
+		clear <= 0;
 		clk <= 0;
 		pia_e <= 0;
 
@@ -79,7 +82,7 @@ module fifo_mux_sim;
 		     fifo_rxf	  <= 0;
 		     fifo_txe	  <= 1;
 		     pia_pb	  <= 0;
-		     fifo_data_in <= 7'ha;
+		     fifo_data_in <= 8'ha;
 		#500 pia_e	  <= 1;
 		     pia_ca2	  <= 1;
 		#500 pia_e	  <= 0;
@@ -104,5 +107,5 @@ module fifo_mux_sim;
 		$finish;
 	end
 
-	assign fifo_data = (pia_e && pia_ca2) ? fifo_data_in : 7'bz;
+	assign fifo_data = (pia_e && pia_ca2) ? fifo_data_in : 8'bz;
 endmodule

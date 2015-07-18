@@ -31,7 +31,7 @@ module clk_div_sim;
 	reg  clk_in;
 	wire clk_out;
 
-	clk_div clk_div(
+	clk_div U(
 		.reset(reset),
 		.clk_in(clk_in),
 		.clk_out(clk_out)

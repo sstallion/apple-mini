@@ -27,27 +27,22 @@
 `timescale 1ns / 10ps
 
 module cpld(input  reset,
-	    input  clk_in,
-	    output clk_out,
+	    input  clear,
 	    input  [3:0] addr,
 	    output r, s, t, x, y, z,
+	    input  clk_in,
+	    output clk_out,
 	    input  pia_e,
 	    output pia_ca1, pia_cb1,
 	    input  pia_ca2, pia_cb2,
 	    output [6:0] pia_pa,
 	    input  [6:0] pia_pb,
 	    output pia_da,
-	    input  fifo_rxf, fifo_txf,
+	    input  fifo_rxf, fifo_txe,
 	    output fifo_rd, fifo_wr,
-	    inout  [6:0] fifo_data);
+	    inout  [7:0] fifo_data);
 
-	clk_div clk_div(
-		.reset(reset),
-		.clk_in(clk_in),
-		.clk_out(clk_out)
-	);
-
-	addr_decode addr_decode(
+	addr_decode U1(
 		.addr(addr),
 		.r(r),
 		.s(s),
@@ -57,8 +52,15 @@ module cpld(input  reset,
 		.z(z)
 	);
 
-	fifo_mux fifo_mux(
+	clk_div U2(
 		.reset(reset),
+		.clk_in(clk_in),
+		.clk_out(clk_out)
+	);
+
+	fifo_mux U3(
+		.reset(reset),
+		.clear(clear),
 		.clk(clk_in),
 		.pia_e(pia_e),
 		.pia_ca1(pia_ca1),

@@ -32,7 +32,7 @@ module addr_decode_sim;
 
 	integer i;
 
-	addr_decode addr_decode(
+	addr_decode U(
 		.addr(addr),
 		.r(r),
 		.s(s),

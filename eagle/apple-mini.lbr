@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -266,7 +266,7 @@ Source: &lt;a href="http://github.com/sstallion/apple-mini/"&gt;http://github.co
 <text x="0" y="3.635" size="1.27" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="PH07-2-SMT">
-<description>&lt;b&gt;Pin Header&lt;/b&gt;</description>
+<description>&lt;b&gt;SMT Pin Header&lt;/b&gt;</description>
 <smd name="10" x="2" y="2.125" dx="1" dy="2.75" layer="1"/>
 <smd name="12" x="4" y="2.125" dx="1" dy="2.75" layer="1"/>
 <smd name="14" x="6" y="2.125" dx="1" dy="2.75" layer="1"/>
@@ -782,6 +782,70 @@ BE FOUND IN THE LICENSE FILE</text>
 <text x="64.77" y="13.97" size="1.27" layer="94" font="vector" ratio="10" align="center-left">DATE</text>
 <text x="95.25" y="13.97" size="1.27" layer="94" font="vector" ratio="10" align="center-left">REV</text>
 </symbol>
+<symbol name="XC9572XL">
+<pin name="P1" x="-20.32" y="43.18" length="short" swaplevel="1"/>
+<pin name="P2/GTS2" x="-20.32" y="40.64" length="short" swaplevel="1"/>
+<pin name="P4" x="-20.32" y="35.56" length="short" swaplevel="1"/>
+<pin name="P5/GTS1" x="-20.32" y="33.02" length="short" swaplevel="1"/>
+<pin name="P6" x="-20.32" y="30.48" length="short" swaplevel="1"/>
+<pin name="P7" x="-20.32" y="27.94" length="short" swaplevel="1"/>
+<pin name="P8" x="-20.32" y="25.4" length="short" swaplevel="1"/>
+<pin name="P9" x="-20.32" y="22.86" length="short" swaplevel="1"/>
+<pin name="P10" x="-20.32" y="20.32" length="short" swaplevel="1"/>
+<pin name="P11" x="-20.32" y="17.78" length="short" swaplevel="1"/>
+<pin name="P12" x="-20.32" y="15.24" length="short" swaplevel="1"/>
+<pin name="P13" x="-20.32" y="12.7" length="short" swaplevel="1"/>
+<pin name="P15/GCK1" x="-20.32" y="7.62" length="short" swaplevel="1"/>
+<pin name="P16/GCK2" x="-20.32" y="5.08" length="short" swaplevel="1"/>
+<pin name="P17/GCK3" x="-20.32" y="2.54" length="short" swaplevel="1"/>
+<pin name="P18" x="-20.32" y="0" length="short" swaplevel="1"/>
+<pin name="P19" x="-20.32" y="-2.54" length="short" swaplevel="1"/>
+<pin name="P20" x="-20.32" y="-5.08" length="short" swaplevel="1"/>
+<pin name="P22" x="-20.32" y="-10.16" length="short" swaplevel="1"/>
+<pin name="P24" x="-20.32" y="-15.24" length="short" swaplevel="1"/>
+<pin name="P31" x="-20.32" y="-27.94" length="short" swaplevel="1"/>
+<pin name="P32" x="-20.32" y="-30.48" length="short" swaplevel="1"/>
+<pin name="P25" x="-20.32" y="-17.78" length="short" swaplevel="1"/>
+<pin name="P34" x="20.32" y="40.64" length="short" swaplevel="1" rot="R180"/>
+<pin name="P27" x="-20.32" y="-22.86" length="short" swaplevel="1"/>
+<pin name="P33" x="20.32" y="43.18" length="short" swaplevel="1" rot="R180"/>
+<pin name="P35" x="20.32" y="38.1" length="short" swaplevel="1" rot="R180"/>
+<pin name="P39" x="20.32" y="27.94" length="short" swaplevel="1" rot="R180"/>
+<pin name="P40" x="20.32" y="25.4" length="short" swaplevel="1" rot="R180"/>
+<pin name="P36" x="20.32" y="35.56" length="short" swaplevel="1" rot="R180"/>
+<pin name="P42" x="20.32" y="20.32" length="short" swaplevel="1" rot="R180"/>
+<pin name="P38" x="20.32" y="30.48" length="short" swaplevel="1" rot="R180"/>
+<pin name="P44" x="20.32" y="15.24" length="short" swaplevel="1" rot="R180"/>
+<pin name="P46" x="20.32" y="10.16" length="short" swaplevel="1" rot="R180"/>
+<pin name="P47" x="20.32" y="7.62" length="short" swaplevel="1" rot="R180"/>
+<pin name="P45" x="20.32" y="12.7" length="short" swaplevel="1" rot="R180"/>
+<pin name="P49" x="20.32" y="2.54" length="short" swaplevel="1" rot="R180"/>
+<pin name="P48" x="20.32" y="5.08" length="short" swaplevel="1" rot="R180"/>
+<pin name="P51" x="20.32" y="-2.54" length="short" swaplevel="1" rot="R180"/>
+<pin name="GSR/P64" x="20.32" y="-30.48" length="short" swaplevel="1" rot="R180"/>
+<pin name="P59" x="20.32" y="-17.78" length="short" swaplevel="1" rot="R180"/>
+<pin name="P60" x="20.32" y="-20.32" length="short" swaplevel="1" rot="R180"/>
+<pin name="P61" x="20.32" y="-22.86" length="short" swaplevel="1" rot="R180"/>
+<pin name="P62" x="20.32" y="-25.4" length="short" swaplevel="1" rot="R180"/>
+<wire x1="-17.78" y1="45.72" x2="17.78" y2="45.72" width="0.254" layer="94"/>
+<wire x1="17.78" y1="45.72" x2="17.78" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-45.72" x2="-17.78" y2="-45.72" width="0.254" layer="94"/>
+<pin name="P52" x="20.32" y="-5.08" length="short" swaplevel="1" rot="R180"/>
+<pin name="P50" x="20.32" y="0" length="short" swaplevel="1" rot="R180"/>
+<pin name="P57" x="20.32" y="-12.7" length="short" swaplevel="1" rot="R180"/>
+<pin name="P58" x="20.32" y="-15.24" length="short" swaplevel="1" rot="R180"/>
+<pin name="P23" x="-20.32" y="-12.7" length="short" swaplevel="1"/>
+<pin name="P63" x="20.32" y="-27.94" length="short" swaplevel="1" rot="R180"/>
+<pin name="P43" x="20.32" y="17.78" length="short" swaplevel="1" rot="R180"/>
+<pin name="P56" x="20.32" y="-10.16" length="short" swaplevel="1" rot="R180"/>
+<pin name="TCK" x="-20.32" y="-35.56" length="short" direction="in"/>
+<pin name="TDI" x="-20.32" y="-38.1" length="short" direction="in"/>
+<pin name="TDO" x="-20.32" y="-40.64" length="short" direction="out"/>
+<pin name="TMS" x="-20.32" y="-43.18" length="short" direction="in"/>
+<wire x1="-17.78" y1="-45.72" x2="-17.78" y2="45.72" width="0.254" layer="94"/>
+<text x="-17.78" y="48.26" size="1.778" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="-17.78" y="-48.26" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FT240X" prefix="U">
@@ -1088,6 +1152,95 @@ Source: &lt;a href="http://www.sullinscorp.com/catalogs/65_PAGE70-71_.156_LP_DS_
 <technologies>
 <technology name="">
 <attribute name="_EXTERNAL_" value=""/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XC9572XL-*" prefix="U">
+<description>&lt;b&gt;Xilinx  XC9572XL High Performance CPLD&lt;/b&gt;
+&lt;p&gt;
+The XC9572XL is a 3.3V CPLD targeted for high-performance, low-voltage applications in leading-edge communications and computing systems. It is comprised of four 54V18 Function Blocks, providing 1,600 usable gates with propagation delays of 5 ns.
+&lt;p&gt;
+Source: &lt;a href="http://www.xilinx.com/support/documentation/data_sheets/ds057.pdf"&gt;http://www.xilinx.com/support/documentation/data_sheets/ds057.pdf&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="XC9572XL" x="0" y="0"/>
+<gate name="PA" symbol="PWRN" x="-83.82" y="0" addlevel="request"/>
+<gate name="PB" symbol="PWRN" x="-68.58" y="0" addlevel="request"/>
+<gate name="PC" symbol="PWRN" x="-53.34" y="0" addlevel="request"/>
+<gate name="PD" symbol="PWRN" x="-38.1" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="VQ64" package="VQFP64">
+<connects>
+<connect gate="G$1" pin="GSR/P64" pad="64"/>
+<connect gate="G$1" pin="P1" pad="1"/>
+<connect gate="G$1" pin="P10" pad="10"/>
+<connect gate="G$1" pin="P11" pad="11"/>
+<connect gate="G$1" pin="P12" pad="12"/>
+<connect gate="G$1" pin="P13" pad="13"/>
+<connect gate="G$1" pin="P15/GCK1" pad="15"/>
+<connect gate="G$1" pin="P16/GCK2" pad="16"/>
+<connect gate="G$1" pin="P17/GCK3" pad="17"/>
+<connect gate="G$1" pin="P18" pad="18"/>
+<connect gate="G$1" pin="P19" pad="19"/>
+<connect gate="G$1" pin="P2/GTS2" pad="2"/>
+<connect gate="G$1" pin="P20" pad="20"/>
+<connect gate="G$1" pin="P22" pad="22"/>
+<connect gate="G$1" pin="P23" pad="23"/>
+<connect gate="G$1" pin="P24" pad="24"/>
+<connect gate="G$1" pin="P25" pad="25"/>
+<connect gate="G$1" pin="P27" pad="27"/>
+<connect gate="G$1" pin="P31" pad="31"/>
+<connect gate="G$1" pin="P32" pad="32"/>
+<connect gate="G$1" pin="P33" pad="33"/>
+<connect gate="G$1" pin="P34" pad="34"/>
+<connect gate="G$1" pin="P35" pad="35"/>
+<connect gate="G$1" pin="P36" pad="36"/>
+<connect gate="G$1" pin="P38" pad="38"/>
+<connect gate="G$1" pin="P39" pad="39"/>
+<connect gate="G$1" pin="P4" pad="4"/>
+<connect gate="G$1" pin="P40" pad="40"/>
+<connect gate="G$1" pin="P42" pad="42"/>
+<connect gate="G$1" pin="P43" pad="43"/>
+<connect gate="G$1" pin="P44" pad="44"/>
+<connect gate="G$1" pin="P45" pad="45"/>
+<connect gate="G$1" pin="P46" pad="46"/>
+<connect gate="G$1" pin="P47" pad="47"/>
+<connect gate="G$1" pin="P48" pad="48"/>
+<connect gate="G$1" pin="P49" pad="49"/>
+<connect gate="G$1" pin="P5/GTS1" pad="5"/>
+<connect gate="G$1" pin="P50" pad="50"/>
+<connect gate="G$1" pin="P51" pad="51"/>
+<connect gate="G$1" pin="P52" pad="52"/>
+<connect gate="G$1" pin="P56" pad="56"/>
+<connect gate="G$1" pin="P57" pad="57"/>
+<connect gate="G$1" pin="P58" pad="58"/>
+<connect gate="G$1" pin="P59" pad="59"/>
+<connect gate="G$1" pin="P6" pad="6"/>
+<connect gate="G$1" pin="P60" pad="60"/>
+<connect gate="G$1" pin="P61" pad="61"/>
+<connect gate="G$1" pin="P62" pad="62"/>
+<connect gate="G$1" pin="P63" pad="63"/>
+<connect gate="G$1" pin="P7" pad="7"/>
+<connect gate="G$1" pin="P8" pad="8"/>
+<connect gate="G$1" pin="P9" pad="9"/>
+<connect gate="G$1" pin="TCK" pad="30"/>
+<connect gate="G$1" pin="TDI" pad="28"/>
+<connect gate="G$1" pin="TDO" pad="53"/>
+<connect gate="G$1" pin="TMS" pad="29"/>
+<connect gate="PA" pin="GND" pad="21"/>
+<connect gate="PA" pin="VCC" pad="26"/>
+<connect gate="PB" pin="GND" pad="54"/>
+<connect gate="PB" pin="VCC" pad="55"/>
+<connect gate="PC" pin="GND" pad="14"/>
+<connect gate="PC" pin="VCC" pad="3"/>
+<connect gate="PD" pin="GND" pad="41"/>
+<connect gate="PD" pin="VCC" pad="37"/>
+</connects>
+<technologies>
+<technology name="10">
+<attribute name="PARTNO" value="XC9572XL-10VQ64"/>
 </technology>
 </technologies>
 </device>
