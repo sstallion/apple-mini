@@ -29,10 +29,10 @@
 module addr_decode(input  [3:0] addr,
 		   output r, s, t, x, y, z);
 
-	assign x = !(addr <= 4'b0111);	// 0x0000..0x7FFF
-	assign t = !(addr == 4'b1010);	// 0xA000..0xAFFF
-	assign s = !(addr == 4'b1011);	// 0xB000..0xBFFF
-	assign r = !(addr == 4'b1100);	// 0xC000..0xCFFF
-	assign z = !(addr == 4'b1101);	// 0xD000..0xDFFF
-	assign y = !(addr >= 4'b1110);	// 0xE000..0xFFFF
+	assign x = !(addr <= 4'b0111);	// X 0x0000 0x7FFF RAM
+	assign t = !(addr == 4'b1010);	// T 0xA000 0xAFFF
+	assign s = !(addr == 4'b1011);	// S 0xB000 0xBFFF
+	assign r = !(addr == 4'b1100);	// R 0xC000 0xCFFF
+	assign z = !(addr == 4'b1101);	// Z 0xD000 0xDFFF PIA
+	assign y = !(addr >= 4'b1110);	// Y 0xE000 0xFFFF EEPROM
 endmodule
