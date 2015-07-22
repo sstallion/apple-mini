@@ -56,7 +56,7 @@
     <property xil_pn:name="Implementation Top Instance Path" xil_pn:value="/cpld" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Package" xil_pn:value="VQ64" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Preferred Language" xil_pn:value="Verilog" xil_pn:valueState="default"/>
-    <property xil_pn:name="Project Description" xil_pn:value="Apple-1 Mini CPLD" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Project Description" xil_pn:value="Apple Mini 1 CPLD" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Property Specification in Project File" xil_pn:value="Store non-default values only" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/addr_decode_sim" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.addr_decode_sim" xil_pn:valueState="non-default"/>
