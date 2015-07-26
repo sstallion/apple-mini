@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -496,17 +496,6 @@ Source: &lt;a href="http://github.com/sstallion/apple-mini/"&gt;http://github.co
 <text x="0" y="1.085" size="1.016" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 <rectangle x1="-0.5" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
-</package>
-<package name="CHIPLED">
-<description>&lt;b&gt;SMT CHIPLED&lt;/b&gt;</description>
-<smd name="1" x="-1.185" y="0" dx="1.27" dy="1.1" layer="1"/>
-<smd name="2" x="1.185" y="0" dx="1.27" dy="1.1" layer="1"/>
-<text x="0" y="1.185" size="1.016" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<polygon width="0" layer="21">
-<vertex x="0.3" y="0.4"/>
-<vertex x="0.3" y="-0.4"/>
-<vertex x="-0.3" y="0"/>
-</polygon>
 </package>
 </packages>
 <symbols>
@@ -1801,7 +1790,7 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/spec/APT2012QBC-
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CHIPLED">
+<device name="" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1825,10 +1814,8 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/spec/APT2012QBC-
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0.2032" drill="0">
-<clearance class="0" value="0.2032"/>
 </class>
 <class number="1" name="supply" width="0.3048" drill="0">
-<clearance class="1" value="0.3048"/>
 </class>
 </classes>
 <parts>
@@ -1869,7 +1856,7 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/spec/APT2012QBC-
 <attribute name="SHEET_NAME" value="I/O &amp; Supply"/>
 </part>
 <part name="R3" library="apple-mini" deviceset="R" device="0603" value="4.7k"/>
-<part name="R8" library="apple-mini" deviceset="R" device="0603" value="100"/>
+<part name="R8" library="apple-mini" deviceset="R" device="0603" value="150"/>
 <part name="U8" library="apple-mini" deviceset="XC9572XL-*" device="VQ64" technology="10"/>
 <part name="C15" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
 <part name="GND22" library="apple-mini" deviceset="GND" device=""/>
@@ -1880,22 +1867,22 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/spec/APT2012QBC-
 <part name="C12" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
 <part name="GND19" library="apple-mini" deviceset="GND" device=""/>
 <part name="CLEAR" library="apple-mini" deviceset="TACTSW" device=""/>
-<part name="GND6" library="apple-mini" deviceset="GND" device=""/>
-<part name="NC7" library="apple-mini" deviceset="NC" device=""/>
-<part name="NC9" library="apple-mini" deviceset="NC" device=""/>
-<part name="R5" library="apple-mini" deviceset="R" device="0603" value="10k"/>
-<part name="U2" library="apple-mini" deviceset="SN74LVC2G17" device="DBV"/>
-<part name="R7" library="apple-mini" deviceset="R" device="0603" value="100"/>
-<part name="C5" library="apple-mini" deviceset="C" device="0603" value="2.2uF"/>
-<part name="GND9" library="apple-mini" deviceset="GND" device=""/>
-<part name="RESET" library="apple-mini" deviceset="TACTSW" device=""/>
 <part name="GND5" library="apple-mini" deviceset="GND" device=""/>
 <part name="NC6" library="apple-mini" deviceset="NC" device=""/>
 <part name="NC8" library="apple-mini" deviceset="NC" device=""/>
 <part name="R4" library="apple-mini" deviceset="R" device="0603" value="10k"/>
+<part name="U2" library="apple-mini" deviceset="SN74LVC2G17" device="DBV"/>
 <part name="R6" library="apple-mini" deviceset="R" device="0603" value="100"/>
 <part name="C4" library="apple-mini" deviceset="C" device="0603" value="2.2uF"/>
 <part name="GND8" library="apple-mini" deviceset="GND" device=""/>
+<part name="RESET" library="apple-mini" deviceset="TACTSW" device=""/>
+<part name="GND6" library="apple-mini" deviceset="GND" device=""/>
+<part name="NC7" library="apple-mini" deviceset="NC" device=""/>
+<part name="NC9" library="apple-mini" deviceset="NC" device=""/>
+<part name="R5" library="apple-mini" deviceset="R" device="0603" value="10k"/>
+<part name="R7" library="apple-mini" deviceset="R" device="0603" value="100"/>
+<part name="C5" library="apple-mini" deviceset="C" device="0603" value="2.2uF"/>
+<part name="GND9" library="apple-mini" deviceset="GND" device=""/>
 <part name="C2" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
 <part name="GND3" library="apple-mini" deviceset="GND" device=""/>
 <part name="TITLE2" library="apple-mini" deviceset="TITLE" device="">
@@ -1924,8 +1911,8 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/spec/APT2012QBC-
 <part name="5V_IN2" library="apple-mini" deviceset="5V_IN" device=""/>
 <part name="5V_IN3" library="apple-mini" deviceset="5V_IN" device=""/>
 <part name="5V1" library="apple-mini" deviceset="5V" device=""/>
-<part name="5V3" library="apple-mini" deviceset="5V" device=""/>
 <part name="5V2" library="apple-mini" deviceset="5V" device=""/>
+<part name="5V3" library="apple-mini" deviceset="5V" device=""/>
 <part name="5V4" library="apple-mini" deviceset="5V" device=""/>
 <part name="5V5" library="apple-mini" deviceset="5V" device=""/>
 <part name="3V3_IN1" library="apple-mini" deviceset="3V3_IN" device=""/>
@@ -2008,33 +1995,33 @@ CBUS6: PWREN#</text>
 </instance>
 <instance part="R3" gate="G$1" x="50.8" y="111.76" rot="R90"/>
 <instance part="R8" gate="G$1" x="139.7" y="45.72" rot="R90"/>
-<instance part="CLEAR" gate="G$1" x="144.78" y="101.6"/>
-<instance part="GND6" gate="GND" x="149.86" y="96.52"/>
-<instance part="NC7" gate="G$1" x="142.24" y="104.14"/>
-<instance part="NC9" gate="G$1" x="142.24" y="99.06"/>
-<instance part="R5" gate="G$1" x="162.56" y="111.76" rot="R90"/>
-<instance part="U2" gate="B" x="172.72" y="104.14"/>
-<instance part="U2" gate="P" x="187.96" y="185.42" rot="MR0"/>
-<instance part="R7" gate="G$1" x="154.94" y="104.14"/>
-<instance part="C5" gate="G$1" x="162.56" y="99.06" rot="MR0"/>
-<instance part="GND9" gate="GND" x="162.56" y="91.44"/>
-<instance part="RESET" gate="G$1" x="86.36" y="101.6" rot="MR0"/>
+<instance part="CLEAR" gate="G$1" x="86.36" y="101.6"/>
 <instance part="GND5" gate="GND" x="91.44" y="96.52"/>
 <instance part="NC6" gate="G$1" x="83.82" y="104.14"/>
 <instance part="NC8" gate="G$1" x="83.82" y="99.06"/>
 <instance part="R4" gate="G$1" x="104.14" y="111.76" rot="R90"/>
+<instance part="U2" gate="B" x="114.3" y="104.14"/>
+<instance part="U2" gate="P" x="187.96" y="185.42" rot="MR0"/>
 <instance part="R6" gate="G$1" x="96.52" y="104.14"/>
 <instance part="C4" gate="G$1" x="104.14" y="99.06" rot="MR0"/>
 <instance part="GND8" gate="GND" x="104.14" y="91.44"/>
-<instance part="U2" gate="A" x="114.3" y="104.14"/>
+<instance part="RESET" gate="G$1" x="149.86" y="101.6" rot="MR0"/>
+<instance part="GND6" gate="GND" x="154.94" y="96.52"/>
+<instance part="NC7" gate="G$1" x="147.32" y="104.14"/>
+<instance part="NC9" gate="G$1" x="147.32" y="99.06"/>
+<instance part="R5" gate="G$1" x="167.64" y="111.76" rot="R90"/>
+<instance part="R7" gate="G$1" x="160.02" y="104.14"/>
+<instance part="C5" gate="G$1" x="167.64" y="99.06" rot="MR0"/>
+<instance part="GND9" gate="GND" x="167.64" y="91.44"/>
+<instance part="U2" gate="A" x="177.8" y="104.14"/>
 <instance part="C2" gate="G$1" x="195.58" y="186.69"/>
 <instance part="GND3" gate="GND" x="187.96" y="175.26"/>
 <instance part="5V_IN1" gate="5V_IN" x="86.36" y="195.58"/>
 <instance part="5V_IN2" gate="5V_IN" x="165.1" y="195.58" rot="MR0"/>
 <instance part="5V_IN3" gate="5V_IN" x="66.04" y="60.96"/>
 <instance part="5V1" gate="5V" x="187.96" y="195.58" rot="MR0"/>
-<instance part="5V3" gate="5V" x="162.56" y="119.38"/>
 <instance part="5V2" gate="5V" x="104.14" y="119.38"/>
+<instance part="5V3" gate="5V" x="167.64" y="119.38"/>
 <instance part="5V4" gate="5V" x="101.6" y="60.96"/>
 <instance part="5V5" gate="5V" x="139.7" y="60.96"/>
 <instance part="3V3_IN1" gate="3V3_IN" x="99.06" y="160.02"/>
@@ -2176,21 +2163,21 @@ CBUS6: PWREN#</text>
 </segment>
 <segment>
 <pinref part="CLEAR" gate="G$1" pin="4"/>
-<wire x1="147.32" y1="99.06" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="GND6" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C5" gate="G$1" pin="2"/>
-<pinref part="GND9" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="RESET" gate="G$1" pin="3"/>
 <wire x1="88.9" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="RESET" gate="G$1" pin="3"/>
+<wire x1="152.4" y1="99.06" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="GND9" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="GND" pin="GND"/>
@@ -2296,12 +2283,12 @@ CBUS6: PWREN#</text>
 <junction x="187.96" y="193.04"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="5V3" gate="5V" pin="5V"/>
-</segment>
-<segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="5V2" gate="5V" pin="5V"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="5V3" gate="5V" pin="5V"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="OUT1"/>
@@ -2341,8 +2328,8 @@ CBUS6: PWREN#</text>
 <label x="215.9" y="127" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="121.92" y1="104.14" x2="124.46" y2="104.14" width="0.1524" layer="91"/>
-<label x="124.46" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="185.42" y1="104.14" x2="187.96" y2="104.14" width="0.1524" layer="91"/>
+<label x="187.96" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U2" gate="A" pin="Y"/>
 </segment>
 </net>
@@ -2605,33 +2592,14 @@ CBUS6: PWREN#</text>
 <net name="N$2" class="0">
 <segment>
 <pinref part="CLEAR" gate="G$1" pin="2"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="U2" gate="B" pin="A"/>
-<wire x1="160.02" y1="104.14" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="104.14" x2="165.1" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="106.68" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
-<junction x="162.56" y="104.14"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="101.6" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="RESET" gate="G$1" pin="1"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="104.14" x2="91.44" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="N$4" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="U2" gate="B" pin="A"/>
 <wire x1="101.6" y1="104.14" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="104.14" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
@@ -2639,6 +2607,25 @@ CBUS6: PWREN#</text>
 <junction x="104.14" y="104.14"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="101.6" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="RESET" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="104.14" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="104.14" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="106.68" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
+<junction x="167.64" y="104.14"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="101.6" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="A"/>
 </segment>
 </net>
@@ -2710,8 +2697,8 @@ CBUS6: PWREN#</text>
 <net name="CLEAR" class="1">
 <segment>
 <pinref part="U2" gate="B" pin="Y"/>
-<wire x1="180.34" y1="104.14" x2="182.88" y2="104.14" width="0.1524" layer="91"/>
-<label x="182.88" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="121.92" y1="104.14" x2="124.46" y2="104.14" width="0.1524" layer="91"/>
+<label x="124.46" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -4086,7 +4073,7 @@ Y E000 FFFF EEPROM</text>
 <approved hash="104,1,165.1,193.04,U1P,VCC,5V_IN,,,"/>
 <approved hash="104,1,83.82,193.04,J1,1,5V_IN,,,"/>
 <approved hash="104,1,83.82,182.88,J1,5,GND,,,"/>
-<approved hash="104,1,40.64,106.68,J3,VREF,3V3,,,"/>
+<approved hash="104,1,40.64,106.68,J2,VREF,3V3,,,"/>
 <approved hash="104,1,73.66,58.42,U3,IN1,5V_IN,,,"/>
 <approved hash="104,1,73.66,40.64,U3,IN2,3V3_IN,,,"/>
 <approved hash="104,1,99.06,58.42,U3,OUT1,5V,,,"/>

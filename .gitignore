@@ -39,3 +39,4 @@
 /cpld/xilinxsim.ini
 /eagle/*.[bls]#*
 /eagle/*.pro
+/eagle/bmp.scr
