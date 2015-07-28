@@ -607,18 +607,14 @@ Source: &lt;a href="http://github.com/sstallion/apple-mini/"&gt;http://github.co
 <pin name="GND" x="7.62" y="-7.62" visible="off" length="middle" direction="pwr" rot="R180"/>
 </symbol>
 <symbol name="TACTSW">
-<pin name="1" x="-2.54" y="2.54" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="3" x="-2.54" y="-2.54" visible="off" length="short" direction="pas" swaplevel="2"/>
-<pin name="2" x="2.54" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="2.54" y="-2.54" visible="off" length="short" direction="pas" swaplevel="2" rot="R180"/>
+<pin name="1" x="2.54" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
 <wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.127" layer="94"/>
 <wire x1="0" y1="1.27" x2="-1.27" y2="0" width="0.127" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.127" layer="94"/>
 <text x="0" y="5.08" size="1.778" layer="95" font="vector" align="top-center">&gt;NAME</text>
-<text x="-2.54" y="1.27" size="1.524" layer="95" font="vector" align="center">1</text>
-<text x="2.54" y="1.27" size="1.524" layer="95" font="vector" align="center">2</text>
-<text x="2.54" y="-3.81" size="1.524" layer="95" font="vector" align="center">4</text>
-<text x="-2.54" y="-3.81" size="1.524" layer="95" font="vector" align="center">3</text>
+<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="PH22-2">
 <wire x1="2.54" y1="27.94" x2="-5.08" y2="27.94" width="0.254" layer="94"/>
@@ -1147,7 +1143,13 @@ Source: &lt;a href="http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_
 <connect gate="P" pin="VCC" pad="18"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="FTDI" constant="no"/>
+<attribute name="MFR_PARTNO" value="FT240XS-U" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1184,13 +1186,19 @@ Source: &lt;a href="http://portal.fciconnect.com/Comergent//fci/drawing/10118193
 <connect gate="G$1" pin="5" pad="5 6 7 8 9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="FCI" constant="no"/>
+<attribute name="MFR_PARTNO" value="10118193-0001LF" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="TPS2082" prefix="U">
-<description>&lt;b&gt;TI TPS2082 Power Distribution Switch&lt;/b&gt;
+<description>&lt;b&gt;Texas Instruments TPS2082 Power Distribution Switch&lt;/b&gt;
 &lt;p&gt;
 The TPS2080, TPS2081, and TPS2082 dual and the
 TPS2085, TPS2086 and TPS2087 quad
@@ -1215,7 +1223,13 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps2080.pdf"&gt;http://www.
 <connect gate="G$1" pin="OUT2" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="Texas Instruments" constant="no"/>
+<attribute name="MFR_PARTNO" value="TPS2082D" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1277,13 +1291,19 @@ Source: &lt;a href="http://www.xilinx.com/support/documentation/data_sheets/ds59
 <connect gate="G$1" pin="VREF" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="Molex" constant="no"/>
+<attribute name="MFR_PARTNO" value="0878321420" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="TACTSW" prefix="S">
-<description>&lt;b&gt;C&amp;amp;K PTS645 Series 6mm Tact Switch&lt;/b&gt;
+<description>&lt;b&gt;C&amp;amp;K Components PTS645 Series 6mm Tact Switch&lt;/b&gt;
 &lt;p&gt;
 Source: &lt;a href="http://www.ck-components.com/14409/pts645_8sept11.pdf/"&gt;http://www.ck-components.com/14409/pts645_8sept11.pdf/&lt;/a&gt;</description>
 <gates>
@@ -1292,13 +1312,17 @@ Source: &lt;a href="http://www.ck-components.com/14409/pts645_8sept11.pdf/"&gt;h
 <devices>
 <device name="" package="SMTR92">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="1" pad="1 2" route="any"/>
+<connect gate="G$1" pin="2" pad="3 4" route="any"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="C&amp;K Components" constant="no"/>
+<attribute name="MFR_PARTNO" value="PTS645SL50SMTR92 LFS" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1362,7 +1386,13 @@ Source: &lt;a href="http://www.sullinscorp.com/catalogs/65_PAGE70-71_.156_LP_DS_
 <connect gate="G$1" pin="Z" pad="Z"/>
 </connects>
 <technologies>
-<technology name="RB"/>
+<technology name="RB">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="Sullins" constant="no"/>
+<attribute name="MFR_PARTNO" value="RBM22DRTN" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1464,13 +1494,19 @@ Source: &lt;a href="http://www.xilinx.com/support/documentation/data_sheets/ds05
 <connect gate="PD" pin="VCC" pad="37"/>
 </connects>
 <technologies>
-<technology name="10"/>
+<technology name="10">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="Xilinx" constant="no"/>
+<attribute name="MFR_PARTNO" value="XC9572XL-10VQG64C" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="SN74LVC2G17" prefix="U">
-<description>&lt;b&gt;TI SN74LVC2G17 Dual Schmitt-Trigger Buffer&lt;/b&gt;
+<description>&lt;b&gt;Texas Instruments SN74LVC2G17 Dual Schmitt-Trigger Buffer&lt;/b&gt;
 &lt;p&gt;
 The SN74LVC2G17 device contains two buffers and performs the Boolean function Y = A. The device functions as two independent buffers, but because of Schmitt action, it may have different input threshold levels for positive-going (VT+) and negative-going (VT–) signals.
 &lt;p&gt;
@@ -1491,17 +1527,23 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf"&gt;http://
 <connect gate="P" pin="VCC" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="Texas Instruments" constant="no"/>
+<attribute name="MFR_PARTNO" value="SN74LVC2G17DBVR" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="MCS6502" prefix="U">
-<description>&lt;b&gt;MOS 6502 Microprocessor (MPU)&lt;/b&gt;
+<description>&lt;b&gt;MOS Technology 6502 Microprocessor (MPU)&lt;/b&gt;
 &lt;p&gt;
 The 6500 Series Microprocessors represent the first totally software compatible microprocessor family. This family of products includes a range of software compatible microprocessors which provide a selection of addressable memory range, interrupt options and on-chip clock oscillators and drivers.
 &lt;p&gt;
-Source: &lt;a href="http://archive.6502.org/datasheets/mos_6500_mpu_preliminary_may_1976.pdf"&gt;http://archive.6502.org/datasheets/mos_6500_mpu_preliminary_may_1976.pdf&lt;/a&gt;</description>
+Source: &lt;a href="http://www.jameco.com/Jameco/Products/ProdDS/43191.pdf"&gt;http://www.jameco.com/Jameco/Products/ProdDS/43191.pdf&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="MCS6502" x="0" y="0"/>
 <gate name="P" symbol="PWRN" x="-30.48" y="0" addlevel="request"/>
@@ -1547,7 +1589,13 @@ Source: &lt;a href="http://archive.6502.org/datasheets/mos_6500_mpu_preliminary_
 <connect gate="P" pin="VCC" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="MOS Technology" constant="no"/>
+<attribute name="MFR_PARTNO" value="MCS6502" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1607,7 +1655,13 @@ Source: &lt;a href="http://www.jameco.com/Jameco/Products/ProdDS/43596MOT.pdf"&g
 <connect gate="P" pin="VCC" pad="20"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="Motorola" constant="no"/>
+<attribute name="MFR_PARTNO" value="MC6821" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1662,7 +1716,13 @@ Source: &lt;a href="http://www.alliancememory.com/pdf/AS6C62256A.pdf"&gt;http://
 <connect gate="P" pin="VCC" pad="28"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="Alliance Memory" constant="no"/>
+<attribute name="MFR_PARTNO" value="AS6C62256A-70PCN" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1708,7 +1768,13 @@ Source: &lt;a href="http://www.atmel.com/Images/doc0270.pdf"&gt;http://www.atmel
 <connect gate="P" pin="VCC" pad="28"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="Atmel" constant="no"/>
+<attribute name="MFR_PARTNO" value="AT28C64B-15PU" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1751,7 +1817,13 @@ Source: &lt;a href="http://www.atmel.com/Images/doc0270.pdf"&gt;http://www.atmel
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="" constant="no"/>
+<attribute name="MFR_PARTNO" value="" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1768,7 +1840,13 @@ Source: &lt;a href="http://www.atmel.com/Images/doc0270.pdf"&gt;http://www.atmel
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="" constant="no"/>
+<attribute name="MFR_PARTNO" value="" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0603" package="0603">
@@ -1777,15 +1855,19 @@ Source: &lt;a href="http://www.atmel.com/Images/doc0270.pdf"&gt;http://www.atmel
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="" constant="no"/>
+<attribute name="MFR_PARTNO" value="" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="CHIPLED" prefix="D">
-<description>&lt;b&gt;SMT CHIPLED&lt;/b&gt;
-&lt;p&gt;
-Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/spec/APT2012QBC-D.pdf"&gt;http://www.kingbrightusa.com/images/catalog/spec/APT2012QBC-D.pdf&lt;/a&gt;</description>
+<description>&lt;b&gt;Chip LED&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
@@ -1796,7 +1878,13 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/spec/APT2012QBC-
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COMMENTS" value="" constant="no"/>
+<attribute name="MFR" value="" constant="no"/>
+<attribute name="MFR_PARTNO" value="" constant="no"/>
+<attribute name="VENDOR" value="" constant="no"/>
+<attribute name="VENDOR_PARTNO" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1819,34 +1907,91 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/spec/APT2012QBC-
 </class>
 </classes>
 <parts>
-<part name="U1" library="apple-mini" deviceset="FT240X" device="S" value="FT240XS"/>
+<part name="U1" library="apple-mini" deviceset="FT240X" device="S" value="FT240XS">
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="768-1158-5-ND"/>
+</part>
 <part name="NC2" library="apple-mini" deviceset="NC" device=""/>
-<part name="J1" library="apple-mini" deviceset="USBMICRO" device=""/>
+<part name="J1" library="apple-mini" deviceset="USBMICRO" device="">
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="609-4616-1-ND"/>
+</part>
 <part name="NC1" library="apple-mini" deviceset="NC" device=""/>
-<part name="R1" library="apple-mini" deviceset="R" device="0402" value="27"/>
-<part name="R2" library="apple-mini" deviceset="R" device="0402" value="27"/>
+<part name="R1" library="apple-mini" deviceset="R" device="0402" value="27">
+<attribute name="COMMENTS" value="5% 1/16W"/>
+<attribute name="MFR" value="Yageo"/>
+<attribute name="MFR_PARTNO" value="RC0402JR-0727RL"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="311-27JRCT-ND"/>
+</part>
+<part name="R2" library="apple-mini" deviceset="R" device="0402" value="27">
+<attribute name="COMMENTS" value="5% 1/16W"/>
+<attribute name="MFR" value="Yageo"/>
+<attribute name="MFR_PARTNO" value="RC0402JR-0727RL"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="311-27JRCT-ND"/>
+</part>
 <part name="GND1" library="apple-mini" deviceset="GND" device=""/>
-<part name="J2" library="apple-mini" deviceset="JTAG" device=""/>
+<part name="J2" library="apple-mini" deviceset="JTAG" device="">
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="WM18641-ND"/>
+</part>
 <part name="GND7" library="apple-mini" deviceset="GND" device=""/>
 <part name="3V32" library="apple-mini" deviceset="3V3" device=""/>
-<part name="D1" library="apple-mini" deviceset="CHIPLED" device=""/>
+<part name="D1" library="apple-mini" deviceset="CHIPLED" device="">
+<attribute name="COMMENTS" value="2V 20mA"/>
+<attribute name="MFR" value="Lite-On"/>
+<attribute name="MFR_PARTNO" value="LTST-C190KGKT"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="160-1435-1-ND"/>
+</part>
 <part name="GND11" library="apple-mini" deviceset="GND" device=""/>
-<part name="J3" library="apple-mini" deviceset="*M22D" device="RTN" technology="RB"/>
+<part name="J3" library="apple-mini" deviceset="*M22D" device="RTN" technology="RB">
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="RBM22DRTN-ND"/>
+</part>
 <part name="NC10" library="apple-mini" deviceset="NC" device=""/>
 <part name="NC11" library="apple-mini" deviceset="NC" device=""/>
 <part name="NC4" library="apple-mini" deviceset="NC" device=""/>
 <part name="NC3" library="apple-mini" deviceset="NC" device=""/>
 <part name="NC5" library="apple-mini" deviceset="NC" device=""/>
-<part name="C1" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
+<part name="C1" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C104K4RACTU"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="399-1096-1-ND"/>
+</part>
 <part name="GND2" library="apple-mini" deviceset="GND" device=""/>
-<part name="U3" library="apple-mini" deviceset="TPS2082" device="D" value="TPS2082D"/>
+<part name="U3" library="apple-mini" deviceset="TPS2082" device="D" value="TPS2082D">
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="296-3433-5-ND"/>
+</part>
 <part name="NC12" library="apple-mini" deviceset="NC" device=""/>
-<part name="C6" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
-<part name="C7" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
+<part name="C6" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C104K4RACTU"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="399-1096-1-ND"/>
+</part>
+<part name="C7" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C104K4RACTU"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="399-1096-1-ND"/>
+</part>
 <part name="GND13" library="apple-mini" deviceset="GND" device=""/>
 <part name="GND12" library="apple-mini" deviceset="GND" device=""/>
 <part name="GND10" library="apple-mini" deviceset="GND" device=""/>
-<part name="R9" library="apple-mini" deviceset="R" device="0603" value="4.7k"/>
+<part name="R9" library="apple-mini" deviceset="R" device="0603" value="4.7k">
+<attribute name="COMMENTS" value="5% 1/10W"/>
+<attribute name="MFR" value="Yageo"/>
+<attribute name="MFR_PARTNO" value="RC0603JR-074K7L"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="311-4.7KGRCT-ND"/>
+</part>
 <part name="TITLE3" library="apple-mini" deviceset="TITLE" device="">
 <attribute name="COMMENTS" value="N/A"/>
 <attribute name="SHEET_NAME" value="CPLD"/>
@@ -1855,57 +2000,197 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/spec/APT2012QBC-
 <attribute name="COMMENTS" value="N/A"/>
 <attribute name="SHEET_NAME" value="I/O &amp; Supply"/>
 </part>
-<part name="R3" library="apple-mini" deviceset="R" device="0603" value="4.7k"/>
-<part name="R8" library="apple-mini" deviceset="R" device="0603" value="150"/>
-<part name="U8" library="apple-mini" deviceset="XC9572XL-*" device="VQ64" technology="10"/>
-<part name="C15" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
+<part name="R3" library="apple-mini" deviceset="R" device="0603" value="4.7k">
+<attribute name="COMMENTS" value="5% 1/10W"/>
+<attribute name="MFR" value="Yageo"/>
+<attribute name="MFR_PARTNO" value="RC0603JR-074K7L"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="311-4.7KGRCT-ND"/>
+</part>
+<part name="R8" library="apple-mini" deviceset="R" device="0603" value="180">
+<attribute name="COMMENTS" value="5% 1/4W"/>
+<attribute name="MFR" value="Rohm Semiconductor"/>
+<attribute name="MFR_PARTNO" value="ESR03EZPJ181"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="RHM180DCT-ND"/>
+</part>
+<part name="U8" library="apple-mini" deviceset="XC9572XL-*" device="VQ64" technology="10">
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="122-1388-ND"/>
+</part>
+<part name="C15" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C104K4RACTU"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="399-1096-1-ND"/>
+</part>
 <part name="GND22" library="apple-mini" deviceset="GND" device=""/>
-<part name="C14" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
+<part name="C14" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C104K4RACTU"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="399-1096-1-ND"/>
+</part>
 <part name="GND21" library="apple-mini" deviceset="GND" device=""/>
-<part name="C13" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
+<part name="C13" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C104K4RACTU"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="399-1096-1-ND"/>
+</part>
 <part name="GND20" library="apple-mini" deviceset="GND" device=""/>
-<part name="C12" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
+<part name="C12" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C104K4RACTU"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="399-1096-1-ND"/>
+</part>
 <part name="GND19" library="apple-mini" deviceset="GND" device=""/>
-<part name="CLEAR" library="apple-mini" deviceset="TACTSW" device=""/>
+<part name="CLEAR" library="apple-mini" deviceset="TACTSW" device="">
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="CKN9088CT-ND"/>
+</part>
 <part name="GND5" library="apple-mini" deviceset="GND" device=""/>
-<part name="NC6" library="apple-mini" deviceset="NC" device=""/>
-<part name="NC8" library="apple-mini" deviceset="NC" device=""/>
-<part name="R4" library="apple-mini" deviceset="R" device="0603" value="10k"/>
-<part name="U2" library="apple-mini" deviceset="SN74LVC2G17" device="DBV"/>
-<part name="R6" library="apple-mini" deviceset="R" device="0603" value="100"/>
-<part name="C4" library="apple-mini" deviceset="C" device="0603" value="2.2uF"/>
+<part name="R4" library="apple-mini" deviceset="R" device="0603" value="100k">
+<attribute name="COMMENTS" value="5% 1/10W"/>
+<attribute name="MFR" value="Yageo"/>
+<attribute name="MFR_PARTNO" value="RC0603JR-07100KL"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="311-100KGRCT-ND"/>
+</part>
+<part name="U2" library="apple-mini" deviceset="SN74LVC2G17" device="DBV">
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="296-13012-1-ND"/>
+</part>
+<part name="R6" library="apple-mini" deviceset="R" device="0603" value="100">
+<attribute name="COMMENTS" value="5% 1/4W"/>
+<attribute name="MFR" value="Rohm Semiconductor"/>
+<attribute name="MFR_PARTNO" value="ESR03EZPJ101"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="RHM100DCT-ND"/>
+</part>
+<part name="C4" library="apple-mini" deviceset="C" device="0603" value="0.22uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="TDK"/>
+<attribute name="MFR_PARTNO" value="C1608X7R1C224K080AC"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="445-1318-1-ND"/>
+</part>
 <part name="GND8" library="apple-mini" deviceset="GND" device=""/>
-<part name="RESET" library="apple-mini" deviceset="TACTSW" device=""/>
+<part name="RESET" library="apple-mini" deviceset="TACTSW" device="">
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="CKN9088CT-ND"/>
+</part>
 <part name="GND6" library="apple-mini" deviceset="GND" device=""/>
-<part name="NC7" library="apple-mini" deviceset="NC" device=""/>
-<part name="NC9" library="apple-mini" deviceset="NC" device=""/>
-<part name="R5" library="apple-mini" deviceset="R" device="0603" value="10k"/>
-<part name="R7" library="apple-mini" deviceset="R" device="0603" value="100"/>
-<part name="C5" library="apple-mini" deviceset="C" device="0603" value="2.2uF"/>
+<part name="R5" library="apple-mini" deviceset="R" device="0603" value="100k">
+<attribute name="COMMENTS" value="5% 1/10W"/>
+<attribute name="MFR" value="Yageo"/>
+<attribute name="MFR_PARTNO" value="RC0603JR-07100KL"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="311-100KGRCT-ND"/>
+</part>
+<part name="R7" library="apple-mini" deviceset="R" device="0603" value="100">
+<attribute name="COMMENTS" value="5% 1/4W"/>
+<attribute name="MFR" value="Rohm Semiconductor"/>
+<attribute name="MFR_PARTNO" value="ESR03EZPJ101"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="RHM100DCT-ND"/>
+</part>
+<part name="C5" library="apple-mini" deviceset="C" device="0603" value="0.22uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="TDK"/>
+<attribute name="MFR_PARTNO" value="C1608X7R1C224K080AC"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="445-1318-1-ND"/>
+</part>
 <part name="GND9" library="apple-mini" deviceset="GND" device=""/>
-<part name="C2" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
+<part name="C2" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C104K4RACTU"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="399-1096-1-ND"/>
+</part>
 <part name="GND3" library="apple-mini" deviceset="GND" device=""/>
 <part name="TITLE2" library="apple-mini" deviceset="TITLE" device="">
 <attribute name="COMMENTS" value="N/A"/>
 <attribute name="SHEET_NAME" value="MPU PIA &amp; Memory"/>
 </part>
-<part name="U4" library="apple-mini" deviceset="MCS6502" device=""/>
-<part name="R10" library="apple-mini" deviceset="R" device="0603" value="10k"/>
-<part name="R11" library="apple-mini" deviceset="R" device="0603" value="10k"/>
-<part name="R12" library="apple-mini" deviceset="R" device="0603" value="10k"/>
+<part name="U4" library="apple-mini" deviceset="MCS6502" device="">
+<attribute name="VENDOR" value="Jameco"/>
+<attribute name="VENDOR_PARTNO" value="43191"/>
+</part>
+<part name="R10" library="apple-mini" deviceset="R" device="0603" value="10k">
+<attribute name="COMMENTS" value="5% 1/10W"/>
+<attribute name="MFR" value="Yageo"/>
+<attribute name="MFR_PARTNO" value="RC0603JR-0710KL"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="311-10KGRCT-ND"/>
+</part>
+<part name="R11" library="apple-mini" deviceset="R" device="0603" value="10k">
+<attribute name="COMMENTS" value="5% 1/10W"/>
+<attribute name="MFR" value="Yageo"/>
+<attribute name="MFR_PARTNO" value="RC0603JR-0710KL"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="311-10KGRCT-ND"/>
+</part>
+<part name="R12" library="apple-mini" deviceset="R" device="0603" value="10k">
+<attribute name="COMMENTS" value="5% 1/10W"/>
+<attribute name="MFR" value="Yageo"/>
+<attribute name="MFR_PARTNO" value="RC0603JR-0710KL"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="311-10KGRCT-ND"/>
+</part>
 <part name="GND17" library="apple-mini" deviceset="GND" device=""/>
-<part name="C8" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
+<part name="C8" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C104K4RACTU"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="399-1096-1-ND"/>
+</part>
 <part name="GND14" library="apple-mini" deviceset="GND" device=""/>
-<part name="U5" library="apple-mini" deviceset="MC6821" device=""/>
+<part name="U5" library="apple-mini" deviceset="MC6821" device="">
+<attribute name="VENDOR" value="Jameco"/>
+<attribute name="VENDOR_PARTNO" value="43596"/>
+</part>
 <part name="NC13" library="apple-mini" deviceset="NC" device=""/>
 <part name="NC14" library="apple-mini" deviceset="NC" device=""/>
-<part name="C11" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
+<part name="C11" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C104K4RACTU"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="399-1096-1-ND"/>
+</part>
 <part name="GND18" library="apple-mini" deviceset="GND" device=""/>
-<part name="U6" library="apple-mini" deviceset="AS6C62256A" device=""/>
-<part name="U7" library="apple-mini" deviceset="AT28C64B" device=""/>
-<part name="C9" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
+<part name="U6" library="apple-mini" deviceset="AS6C62256A" device="">
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="1450-1182-5-ND"/>
+</part>
+<part name="U7" library="apple-mini" deviceset="AT28C64B" device="">
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="AT28C64B-15PU-ND"/>
+</part>
+<part name="C9" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C104K4RACTU"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="399-1096-1-ND"/>
+</part>
 <part name="GND15" library="apple-mini" deviceset="GND" device=""/>
-<part name="C10" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
+<part name="C10" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C104K4RACTU"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="399-1096-1-ND"/>
+</part>
 <part name="GND16" library="apple-mini" deviceset="GND" device=""/>
 <part name="5V_IN1" library="apple-mini" deviceset="5V_IN" device=""/>
 <part name="5V_IN2" library="apple-mini" deviceset="5V_IN" device=""/>
@@ -1931,7 +2216,13 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/spec/APT2012QBC-
 <part name="3V35" library="apple-mini" deviceset="3V3" device=""/>
 <part name="3V36" library="apple-mini" deviceset="3V3" device=""/>
 <part name="3V37" library="apple-mini" deviceset="3V3" device=""/>
-<part name="C3" library="apple-mini" deviceset="C" device="0603" value="0.1uF"/>
+<part name="C3" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
+<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C104K4RACTU"/>
+<attribute name="VENDOR" value="Digi-Key"/>
+<attribute name="VENDOR_PARTNO" value="399-1096-1-ND"/>
+</part>
 <part name="GND4" library="apple-mini" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -1990,25 +2281,27 @@ CBUS6: PWREN#</text>
 <instance part="GND10" gate="GND" x="71.12" y="45.72"/>
 <instance part="R9" gate="G$1" x="55.88" y="30.48" rot="R90"/>
 <instance part="TITLE1" gate="G$1" x="167.64" y="0">
-<attribute name="COMMENTS" x="167.64" y="0" size="1.778" layer="96" font="vector" display="off"/>
-<attribute name="SHEET_NAME" x="167.64" y="0" size="1.778" layer="96" font="vector" display="off"/>
+<attribute name="COMMENTS" x="167.64" y="0" size="1.778" layer="96" display="off"/>
+<attribute name="SHEET_NAME" x="167.64" y="0" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R3" gate="G$1" x="50.8" y="111.76" rot="R90"/>
 <instance part="R8" gate="G$1" x="139.7" y="45.72" rot="R90"/>
 <instance part="CLEAR" gate="G$1" x="86.36" y="101.6"/>
 <instance part="GND5" gate="GND" x="91.44" y="96.52"/>
-<instance part="NC6" gate="G$1" x="83.82" y="104.14"/>
-<instance part="NC8" gate="G$1" x="83.82" y="99.06"/>
 <instance part="R4" gate="G$1" x="104.14" y="111.76" rot="R90"/>
 <instance part="U2" gate="B" x="114.3" y="104.14"/>
 <instance part="U2" gate="P" x="187.96" y="185.42" rot="MR0"/>
-<instance part="R6" gate="G$1" x="96.52" y="104.14"/>
+<instance part="R6" gate="G$1" x="96.52" y="104.14">
+<attribute name="COMMENTS" x="96.52" y="104.14" size="1.778" layer="96" display="off"/>
+<attribute name="MFR" x="96.52" y="104.14" size="1.778" layer="96" display="off"/>
+<attribute name="MFR_PARTNO" x="96.52" y="104.14" size="1.778" layer="96" display="off"/>
+<attribute name="VENDOR" x="96.52" y="104.14" size="1.778" layer="96" display="off"/>
+<attribute name="VENDOR_PARTNO" x="96.52" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C4" gate="G$1" x="104.14" y="99.06" rot="MR0"/>
 <instance part="GND8" gate="GND" x="104.14" y="91.44"/>
 <instance part="RESET" gate="G$1" x="149.86" y="101.6" rot="MR0"/>
 <instance part="GND6" gate="GND" x="154.94" y="96.52"/>
-<instance part="NC7" gate="G$1" x="147.32" y="104.14"/>
-<instance part="NC9" gate="G$1" x="147.32" y="99.06"/>
 <instance part="R5" gate="G$1" x="167.64" y="111.76" rot="R90"/>
 <instance part="R7" gate="G$1" x="160.02" y="104.14"/>
 <instance part="C5" gate="G$1" x="167.64" y="99.06" rot="MR0"/>
@@ -2162,18 +2455,8 @@ CBUS6: PWREN#</text>
 <pinref part="C7" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="CLEAR" gate="G$1" pin="4"/>
-<wire x1="88.9" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="GND5" gate="GND" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="RESET" gate="G$1" pin="3"/>
-<wire x1="152.4" y1="99.06" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="GND6" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -2194,6 +2477,15 @@ CBUS6: PWREN#</text>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="CLEAR" gate="G$1" pin="2"/>
+<pinref part="GND5" gate="GND" pin="GND"/>
+<wire x1="88.9" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND6" gate="GND" pin="GND"/>
+<wire x1="152.4" y1="99.06" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FIFO_WR" class="0">
@@ -2589,13 +2881,6 @@ CBUS6: PWREN#</text>
 <label x="55.88" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="CLEAR" gate="G$1" pin="2"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="104.14" x2="91.44" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -2607,13 +2892,6 @@ CBUS6: PWREN#</text>
 <junction x="104.14" y="104.14"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="101.6" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="RESET" gate="G$1" pin="1"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -2699,6 +2977,19 @@ CBUS6: PWREN#</text>
 <pinref part="U2" gate="B" pin="Y"/>
 <wire x1="121.92" y1="104.14" x2="124.46" y2="104.14" width="0.1524" layer="91"/>
 <label x="124.46" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="CLEAR" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="104.14" x2="91.44" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -3591,8 +3882,8 @@ Y E000 FFFF EEPROM</text>
 </plain>
 <instances>
 <instance part="TITLE3" gate="G$1" x="167.64" y="0">
-<attribute name="COMMENTS" x="167.64" y="0" size="1.778" layer="96" font="vector" display="off"/>
-<attribute name="SHEET_NAME" x="167.64" y="0" size="1.778" layer="96" font="vector" display="off"/>
+<attribute name="COMMENTS" x="167.64" y="0" size="1.778" layer="96" display="off"/>
+<attribute name="SHEET_NAME" x="167.64" y="0" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U8" gate="G$1" x="139.7" y="106.68"/>
 <instance part="C15" gate="G$1" x="213.36" y="146.05"/>
