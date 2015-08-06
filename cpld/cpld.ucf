@@ -22,55 +22,55 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 
-NET "reset" LOC = "P1";
-NET "clear" LOC = "P31";
+NET "reset" LOC = "P48";
+NET "clear" LOC = "P49";
 
 # clk_div
 NET "clk_in" LOC = "P16" | BUFG = CLK;
-NET "clk_out" LOC = "P24";
+NET "clk_out" LOC = "P17";
 
 # addr_decode
-NET "addr<0>" LOC = "P57";
-NET "addr<1>" LOC = "P59";
-NET "addr<2>" LOC = "P50";
-NET "addr<3>" LOC = "P2";
-NET "r" LOC = "P27";
-NET "s" LOC = "P33";
-NET "t" LOC = "P35";
-NET "x" LOC = "P34";
-NET "y" LOC = "P42";
-NET "z" LOC = "P38";
+NET "addr<0>" LOC = "P33";
+NET "addr<1>" LOC = "P34";
+NET "addr<2>" LOC = "P35";
+NET "addr<3>" LOC = "P36";
+NET "r" LOC = "P19";
+NET "s" LOC = "P20";
+NET "t" LOC = "P22";
+NET "x" LOC = "P23";
+NET "y" LOC = "P24";
+NET "z" LOC = "P25";
 
 # fifo_mux
-NET "pia_e" LOC = "P47";
-NET "pia_ca1" LOC = "P52";
-NET "pia_ca2" LOC = "P56";
-NET "pia_cb1" LOC = "P19";
-NET "pia_cb2" LOC = "P40";
-NET "pia_pa<0>" LOC = "P6";
-NET "pia_pa<1>" LOC = "P60";
-NET "pia_pa<2>" LOC = "P58";
-NET "pia_pa<3>" LOC = "P62";
-NET "pia_pa<4>" LOC = "P63";
-NET "pia_pa<5>" LOC = "P64";
-NET "pia_pa<6>" LOC = "P4";
-NET "pia_pb<0>" LOC = "P61";
-NET "pia_pb<1>" LOC = "P5";
-NET "pia_pb<2>" LOC = "P46";
-NET "pia_pb<3>" LOC = "P7";
-NET "pia_pb<4>" LOC = "P11";
-NET "pia_pb<5>" LOC = "P13";
-NET "pia_pb<6>" LOC = "P12";
-NET "pia_da" LOC = "P20";
-NET "fifo_rxf" LOC = "P48";
-NET "fifo_txe" LOC = "P45";
-NET "fifo_rd" LOC = "P22";
-NET "fifo_wr" LOC = "P18";
-NET "fifo_data<0>" LOC = "P43";
-NET "fifo_data<1>" LOC = "P44";
-NET "fifo_data<2>" LOC = "P49";
-NET "fifo_data<3>" LOC = "P51";
-NET "fifo_data<4>" LOC = "P8";
-NET "fifo_data<5>" LOC = "P9";
-NET "fifo_data<6>" LOC = "P10";
-NET "fifo_data<7>" LOC = "P39";
+NET "pia_e" LOC = "P32";
+NET "pia_ca1" LOC = "P61";
+NET "pia_ca2" LOC = "P62";
+NET "pia_cb1" LOC = "P63";
+NET "pia_cb2" LOC = "P64";
+NET "pia_pa<0>" LOC = "P51";
+NET "pia_pa<1>" LOC = "P52";
+NET "pia_pa<2>" LOC = "P56";
+NET "pia_pa<3>" LOC = "P57";
+NET "pia_pa<4>" LOC = "P58";
+NET "pia_pa<5>" LOC = "P59";
+NET "pia_pa<6>" LOC = "P60";
+NET "pia_pb<0>" LOC = "P39";
+NET "pia_pb<1>" LOC = "P40";
+NET "pia_pb<2>" LOC = "P42";
+NET "pia_pb<3>" LOC = "P43";
+NET "pia_pb<4>" LOC = "P44";
+NET "pia_pb<5>" LOC = "P45";
+NET "pia_pb<6>" LOC = "P46";
+NET "pia_da" LOC = "P47";
+NET "fifo_rxf" LOC = "P12";
+NET "fifo_txe" LOC = "P13";
+NET "fifo_rd" LOC = "P10";
+NET "fifo_wr" LOC = "P11";
+NET "fifo_data<0>" LOC = "P1";
+NET "fifo_data<1>" LOC = "P2";
+NET "fifo_data<2>" LOC = "P4";
+NET "fifo_data<3>" LOC = "P5";
+NET "fifo_data<4>" LOC = "P6";
+NET "fifo_data<5>" LOC = "P7";
+NET "fifo_data<6>" LOC = "P8";
+NET "fifo_data<7>" LOC = "P9";

@@ -1939,7 +1939,7 @@ Source: &lt;a href="http://www.atmel.com/Images/doc0270.pdf"&gt;http://www.atmel
 <part name="GND7" library="apple-mini" deviceset="GND" device=""/>
 <part name="3V32" library="apple-mini" deviceset="3V3" device=""/>
 <part name="D1" library="apple-mini" deviceset="CHIPLED" device="">
-<attribute name="COMMENTS" value="2V 20mA"/>
+<attribute name="COMMENTS" value="2.0-2.5V 20mA"/>
 <attribute name="MFR" value="Lite-On"/>
 <attribute name="MFR_PARTNO" value="LTST-C190KGKT"/>
 <attribute name="VENDOR" value="Digi-Key"/>
@@ -1950,8 +1950,8 @@ Source: &lt;a href="http://www.atmel.com/Images/doc0270.pdf"&gt;http://www.atmel
 <attribute name="VENDOR" value="Digi-Key"/>
 <attribute name="VENDOR_PARTNO" value="RBM22DRTN-ND"/>
 </part>
-<part name="NC10" library="apple-mini" deviceset="NC" device=""/>
-<part name="NC11" library="apple-mini" deviceset="NC" device=""/>
+<part name="NC6" library="apple-mini" deviceset="NC" device=""/>
+<part name="NC7" library="apple-mini" deviceset="NC" device=""/>
 <part name="NC4" library="apple-mini" deviceset="NC" device=""/>
 <part name="NC3" library="apple-mini" deviceset="NC" device=""/>
 <part name="NC5" library="apple-mini" deviceset="NC" device=""/>
@@ -1967,7 +1967,7 @@ Source: &lt;a href="http://www.atmel.com/Images/doc0270.pdf"&gt;http://www.atmel
 <attribute name="VENDOR" value="Digi-Key"/>
 <attribute name="VENDOR_PARTNO" value="296-3433-5-ND"/>
 </part>
-<part name="NC12" library="apple-mini" deviceset="NC" device=""/>
+<part name="NC8" library="apple-mini" deviceset="NC" device=""/>
 <part name="C6" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
 <attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
 <attribute name="MFR" value="Kemet"/>
@@ -2007,7 +2007,7 @@ Source: &lt;a href="http://www.atmel.com/Images/doc0270.pdf"&gt;http://www.atmel
 <attribute name="VENDOR" value="Digi-Key"/>
 <attribute name="VENDOR_PARTNO" value="311-4.7KGRCT-ND"/>
 </part>
-<part name="R8" library="apple-mini" deviceset="R" device="0603" value="180">
+<part name="R8" library="apple-mini" deviceset="R" device="0603" value="150">
 <attribute name="COMMENTS" value="5% 1/4W"/>
 <attribute name="MFR" value="Rohm Semiconductor"/>
 <attribute name="MFR_PARTNO" value="ESR03EZPJ181"/>
@@ -2051,16 +2051,17 @@ Source: &lt;a href="http://www.atmel.com/Images/doc0270.pdf"&gt;http://www.atmel
 </part>
 <part name="GND19" library="apple-mini" deviceset="GND" device=""/>
 <part name="CLEAR" library="apple-mini" deviceset="TACTSW" device="">
+<attribute name="COMMENTS" value="12V 50mA"/>
 <attribute name="VENDOR" value="Digi-Key"/>
 <attribute name="VENDOR_PARTNO" value="CKN9088CT-ND"/>
 </part>
 <part name="GND5" library="apple-mini" deviceset="GND" device=""/>
-<part name="R4" library="apple-mini" deviceset="R" device="0603" value="100k">
+<part name="R4" library="apple-mini" deviceset="R" device="0603" value="10k">
 <attribute name="COMMENTS" value="5% 1/10W"/>
 <attribute name="MFR" value="Yageo"/>
-<attribute name="MFR_PARTNO" value="RC0603JR-07100KL"/>
+<attribute name="MFR_PARTNO" value="RC0603JR-0710KL"/>
 <attribute name="VENDOR" value="Digi-Key"/>
-<attribute name="VENDOR_PARTNO" value="311-100KGRCT-ND"/>
+<attribute name="VENDOR_PARTNO" value="311-10KGRCT-ND"/>
 </part>
 <part name="U2" library="apple-mini" deviceset="SN74LVC2G17" device="DBV">
 <attribute name="VENDOR" value="Digi-Key"/>
@@ -2073,25 +2074,26 @@ Source: &lt;a href="http://www.atmel.com/Images/doc0270.pdf"&gt;http://www.atmel
 <attribute name="VENDOR" value="Digi-Key"/>
 <attribute name="VENDOR_PARTNO" value="RHM100DCT-ND"/>
 </part>
-<part name="C4" library="apple-mini" deviceset="C" device="0603" value="0.22uF">
-<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
-<attribute name="MFR" value="TDK"/>
-<attribute name="MFR_PARTNO" value="C1608X7R1C224K080AC"/>
+<part name="C4" library="apple-mini" deviceset="C" device="0603" value="2.2uF">
+<attribute name="COMMENTS" value="16V 10% X5R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C225K4PACTU"/>
 <attribute name="VENDOR" value="Digi-Key"/>
-<attribute name="VENDOR_PARTNO" value="445-1318-1-ND"/>
+<attribute name="VENDOR_PARTNO" value="399-7886-1-ND"/>
 </part>
 <part name="GND8" library="apple-mini" deviceset="GND" device=""/>
 <part name="RESET" library="apple-mini" deviceset="TACTSW" device="">
+<attribute name="COMMENTS" value="12V 50mA"/>
 <attribute name="VENDOR" value="Digi-Key"/>
 <attribute name="VENDOR_PARTNO" value="CKN9088CT-ND"/>
 </part>
 <part name="GND6" library="apple-mini" deviceset="GND" device=""/>
-<part name="R5" library="apple-mini" deviceset="R" device="0603" value="100k">
+<part name="R5" library="apple-mini" deviceset="R" device="0603" value="10k">
 <attribute name="COMMENTS" value="5% 1/10W"/>
 <attribute name="MFR" value="Yageo"/>
-<attribute name="MFR_PARTNO" value="RC0603JR-07100KL"/>
+<attribute name="MFR_PARTNO" value="RC0603JR-0710KL"/>
 <attribute name="VENDOR" value="Digi-Key"/>
-<attribute name="VENDOR_PARTNO" value="311-100KGRCT-ND"/>
+<attribute name="VENDOR_PARTNO" value="311-10KGRCT-ND"/>
 </part>
 <part name="R7" library="apple-mini" deviceset="R" device="0603" value="100">
 <attribute name="COMMENTS" value="5% 1/4W"/>
@@ -2100,12 +2102,12 @@ Source: &lt;a href="http://www.atmel.com/Images/doc0270.pdf"&gt;http://www.atmel
 <attribute name="VENDOR" value="Digi-Key"/>
 <attribute name="VENDOR_PARTNO" value="RHM100DCT-ND"/>
 </part>
-<part name="C5" library="apple-mini" deviceset="C" device="0603" value="0.22uF">
-<attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
-<attribute name="MFR" value="TDK"/>
-<attribute name="MFR_PARTNO" value="C1608X7R1C224K080AC"/>
+<part name="C5" library="apple-mini" deviceset="C" device="0603" value="2.2uF">
+<attribute name="COMMENTS" value="16V 10% X5R MLCC"/>
+<attribute name="MFR" value="Kemet"/>
+<attribute name="MFR_PARTNO" value="C0603C225K4PACTU"/>
 <attribute name="VENDOR" value="Digi-Key"/>
-<attribute name="VENDOR_PARTNO" value="445-1318-1-ND"/>
+<attribute name="VENDOR_PARTNO" value="399-7886-1-ND"/>
 </part>
 <part name="GND9" library="apple-mini" deviceset="GND" device=""/>
 <part name="C2" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
@@ -2158,8 +2160,8 @@ Source: &lt;a href="http://www.atmel.com/Images/doc0270.pdf"&gt;http://www.atmel
 <attribute name="VENDOR" value="Jameco"/>
 <attribute name="VENDOR_PARTNO" value="43596"/>
 </part>
-<part name="NC13" library="apple-mini" deviceset="NC" device=""/>
-<part name="NC14" library="apple-mini" deviceset="NC" device=""/>
+<part name="NC9" library="apple-mini" deviceset="NC" device=""/>
+<part name="NC10" library="apple-mini" deviceset="NC" device=""/>
 <part name="C11" library="apple-mini" deviceset="C" device="0603" value="0.1uF">
 <attribute name="COMMENTS" value="16V 10% X7R MLCC"/>
 <attribute name="MFR" value="Kemet"/>
@@ -2264,8 +2266,8 @@ CBUS6: PWREN#</text>
 <instance part="D1" gate="G$1" x="139.7" y="55.88" rot="MR0"/>
 <instance part="GND11" gate="GND" x="139.7" y="38.1"/>
 <instance part="J3" gate="G$1" x="226.06" y="104.14"/>
-<instance part="NC10" gate="G$1" x="231.14" y="78.74"/>
-<instance part="NC11" gate="G$1" x="231.14" y="76.2"/>
+<instance part="NC6" gate="G$1" x="231.14" y="78.74"/>
+<instance part="NC7" gate="G$1" x="231.14" y="76.2"/>
 <instance part="NC4" gate="G$1" x="231.14" y="124.46"/>
 <instance part="NC3" gate="G$1" x="218.44" y="129.54"/>
 <instance part="NC5" gate="G$1" x="218.44" y="106.68"/>
@@ -2273,7 +2275,7 @@ CBUS6: PWREN#</text>
 <instance part="GND2" gate="GND" x="165.1" y="175.26"/>
 <instance part="U1" gate="P" x="165.1" y="185.42" rot="MR0"/>
 <instance part="U3" gate="G$1" x="86.36" y="38.1"/>
-<instance part="NC12" gate="G$1" x="99.06" y="22.86"/>
+<instance part="NC8" gate="G$1" x="99.06" y="22.86"/>
 <instance part="C6" gate="G$1" x="71.12" y="53.34" rot="MR0"/>
 <instance part="C7" gate="G$1" x="71.12" y="35.56" rot="MR0"/>
 <instance part="GND13" gate="GND" x="71.12" y="12.7"/>
@@ -2300,7 +2302,7 @@ CBUS6: PWREN#</text>
 </instance>
 <instance part="C4" gate="G$1" x="104.14" y="99.06" rot="MR0"/>
 <instance part="GND8" gate="GND" x="104.14" y="91.44"/>
-<instance part="RESET" gate="G$1" x="149.86" y="101.6" rot="MR0"/>
+<instance part="RESET" gate="G$1" x="149.86" y="101.6"/>
 <instance part="GND6" gate="GND" x="154.94" y="96.52"/>
 <instance part="R5" gate="G$1" x="167.64" y="111.76" rot="R90"/>
 <instance part="R7" gate="G$1" x="160.02" y="104.14"/>
@@ -2485,7 +2487,8 @@ CBUS6: PWREN#</text>
 </segment>
 <segment>
 <pinref part="GND6" gate="GND" pin="GND"/>
-<wire x1="152.4" y1="99.06" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="RESET" gate="G$1" pin="2"/>
+<wire x1="154.94" y1="99.06" x2="152.4" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FIFO_WR" class="0">
@@ -2509,14 +2512,14 @@ CBUS6: PWREN#</text>
 <wire x1="99.06" y1="190.5" x2="106.68" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3_P" class="0">
+<net name="N$1_P" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="187.96" x2="88.9" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4_P" class="0">
+<net name="N$2_P" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="USBDP"/>
@@ -2989,7 +2992,8 @@ CBUS6: PWREN#</text>
 <net name="N$3" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="RESET" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="104.14" x2="152.4" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -3029,8 +3033,8 @@ Y E000 FFFF EEPROM</text>
 <instance part="GND14" gate="GND" x="53.34" y="167.64" rot="MR0"/>
 <instance part="U4" gate="P" x="53.34" y="177.8"/>
 <instance part="U5" gate="G$1" x="86.36" y="60.96"/>
-<instance part="NC13" gate="G$1" x="101.6" y="30.48"/>
-<instance part="NC14" gate="G$1" x="101.6" y="27.94"/>
+<instance part="NC9" gate="G$1" x="101.6" y="30.48"/>
+<instance part="NC10" gate="G$1" x="101.6" y="27.94"/>
 <instance part="C11" gate="G$1" x="45.72" y="87.63" rot="MR0"/>
 <instance part="GND18" gate="GND" x="53.34" y="76.2" rot="MR0"/>
 <instance part="U5" gate="P" x="53.34" y="86.36"/>
@@ -3945,113 +3949,106 @@ Y E000 FFFF EEPROM</text>
 <label x="116.84" y="114.3" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="P17/GCK3"/>
-<wire x1="119.38" y1="109.22" x2="116.84" y2="109.22" width="0.1524" layer="91"/>
-<label x="116.84" y="109.22" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P18"/>
+<wire x1="119.38" y1="106.68" x2="116.84" y2="106.68" width="0.1524" layer="91"/>
+<label x="116.84" y="106.68" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="P23"/>
-<wire x1="119.38" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
-<label x="116.84" y="93.98" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P31"/>
+<wire x1="119.38" y1="78.74" x2="116.84" y2="78.74" width="0.1524" layer="91"/>
+<label x="116.84" y="78.74" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="P25"/>
-<wire x1="119.38" y1="88.9" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
-<label x="116.84" y="88.9" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P50"/>
+<wire x1="160.02" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
+<label x="162.56" y="106.68" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="P32"/>
-<wire x1="119.38" y1="76.2" x2="116.84" y2="76.2" width="0.1524" layer="91"/>
-<label x="116.84" y="76.2" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P38"/>
+<wire x1="160.02" y1="137.16" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
+<label x="162.56" y="137.16" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="P36"/>
-<wire x1="160.02" y1="142.24" x2="162.56" y2="142.24" width="0.1524" layer="91"/>
-<label x="162.56" y="142.24" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P27"/>
+<wire x1="119.38" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
+<label x="116.84" y="83.82" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P1"/>
-<wire x1="119.38" y1="149.86" x2="116.84" y2="149.86" width="0.1524" layer="91"/>
-<label x="116.84" y="149.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="A3" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P2/GTS2"/>
-<wire x1="119.38" y1="147.32" x2="116.84" y2="147.32" width="0.1524" layer="91"/>
-<label x="116.84" y="147.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P48"/>
+<wire x1="160.02" y1="111.76" x2="162.56" y2="111.76" width="0.1524" layer="91"/>
+<label x="162.56" y="111.76" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PA6" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P4"/>
-<wire x1="119.38" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
-<label x="116.84" y="142.24" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P60"/>
+<wire x1="160.02" y1="86.36" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
+<label x="162.56" y="86.36" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PB1" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P5/GTS1"/>
-<wire x1="119.38" y1="139.7" x2="116.84" y2="139.7" width="0.1524" layer="91"/>
-<label x="116.84" y="139.7" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P40"/>
+<wire x1="160.02" y1="132.08" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
+<label x="162.56" y="132.08" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PA0" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P51"/>
+<wire x1="160.02" y1="104.14" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
+<label x="162.56" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="PB3" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P43"/>
+<wire x1="160.02" y1="124.46" x2="162.56" y2="124.46" width="0.1524" layer="91"/>
+<label x="162.56" y="124.46" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="FIFO_DATA4" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="P6"/>
 <wire x1="119.38" y1="137.16" x2="116.84" y2="137.16" width="0.1524" layer="91"/>
 <label x="116.84" y="137.16" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PB3" class="0">
+<net name="FIFO_DATA5" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="P7"/>
 <wire x1="119.38" y1="134.62" x2="116.84" y2="134.62" width="0.1524" layer="91"/>
 <label x="116.84" y="134.62" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="FIFO_DATA4" class="0">
+<net name="FIFO_DATA6" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="P8"/>
 <wire x1="119.38" y1="132.08" x2="116.84" y2="132.08" width="0.1524" layer="91"/>
 <label x="116.84" y="132.08" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="FIFO_DATA5" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P9"/>
-<wire x1="119.38" y1="129.54" x2="116.84" y2="129.54" width="0.1524" layer="91"/>
-<label x="116.84" y="129.54" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="FIFO_DATA6" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P10"/>
-<wire x1="119.38" y1="127" x2="116.84" y2="127" width="0.1524" layer="91"/>
-<label x="116.84" y="127" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="PB4" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P11"/>
-<wire x1="119.38" y1="124.46" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
-<label x="116.84" y="124.46" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P44"/>
+<wire x1="160.02" y1="121.92" x2="162.56" y2="121.92" width="0.1524" layer="91"/>
+<label x="162.56" y="121.92" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PB6" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P12"/>
-<wire x1="119.38" y1="121.92" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
-<label x="116.84" y="121.92" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P46"/>
+<wire x1="160.02" y1="116.84" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
+<label x="162.56" y="116.84" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PB5" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P13"/>
-<wire x1="119.38" y1="119.38" x2="116.84" y2="119.38" width="0.1524" layer="91"/>
-<label x="116.84" y="119.38" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P45"/>
+<wire x1="160.02" y1="119.38" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
+<label x="162.56" y="119.38" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="CLK12MHZ" class="0">
@@ -4063,44 +4060,44 @@ Y E000 FFFF EEPROM</text>
 </net>
 <net name="FIFO_WR" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P18"/>
-<wire x1="119.38" y1="106.68" x2="116.84" y2="106.68" width="0.1524" layer="91"/>
-<label x="116.84" y="106.68" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P11"/>
+<wire x1="119.38" y1="124.46" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
+<label x="116.84" y="124.46" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CB1" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P19"/>
-<wire x1="119.38" y1="104.14" x2="116.84" y2="104.14" width="0.1524" layer="91"/>
-<label x="116.84" y="104.14" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P63"/>
+<wire x1="160.02" y1="78.74" x2="162.56" y2="78.74" width="0.1524" layer="91"/>
+<label x="162.56" y="78.74" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="DA" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P20"/>
-<wire x1="119.38" y1="101.6" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
-<label x="116.84" y="101.6" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P47"/>
+<wire x1="160.02" y1="114.3" x2="162.56" y2="114.3" width="0.1524" layer="91"/>
+<label x="162.56" y="114.3" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="FIFO_RD" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P22"/>
-<wire x1="119.38" y1="96.52" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
-<label x="116.84" y="96.52" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P10"/>
+<wire x1="119.38" y1="127" x2="116.84" y2="127" width="0.1524" layer="91"/>
+<label x="116.84" y="127" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PHI0" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P24"/>
-<wire x1="119.38" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
-<label x="116.84" y="91.44" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P17/GCK3"/>
+<wire x1="119.38" y1="109.22" x2="116.84" y2="109.22" width="0.1524" layer="91"/>
+<label x="116.84" y="109.22" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="R" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P27"/>
-<wire x1="119.38" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
-<label x="116.84" y="83.82" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P19"/>
+<wire x1="119.38" y1="104.14" x2="116.84" y2="104.14" width="0.1524" layer="91"/>
+<label x="116.84" y="104.14" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TCK" class="0">
@@ -4133,191 +4130,163 @@ Y E000 FFFF EEPROM</text>
 </net>
 <net name="S" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P33"/>
-<wire x1="160.02" y1="149.86" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
-<label x="162.56" y="149.86" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P20"/>
+<wire x1="119.38" y1="101.6" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
+<label x="116.84" y="101.6" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="X" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P34"/>
-<wire x1="160.02" y1="147.32" x2="162.56" y2="147.32" width="0.1524" layer="91"/>
-<label x="162.56" y="147.32" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P23"/>
+<wire x1="119.38" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
+<label x="116.84" y="93.98" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="T" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P35"/>
-<wire x1="160.02" y1="144.78" x2="162.56" y2="144.78" width="0.1524" layer="91"/>
-<label x="162.56" y="144.78" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P22"/>
+<wire x1="119.38" y1="96.52" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
+<label x="116.84" y="96.52" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="Z" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P38"/>
-<wire x1="160.02" y1="137.16" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
-<label x="162.56" y="137.16" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P25"/>
+<wire x1="119.38" y1="88.9" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
+<label x="116.84" y="88.9" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CB2" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P40"/>
-<wire x1="160.02" y1="132.08" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
-<label x="162.56" y="132.08" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="Y" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P42"/>
-<wire x1="160.02" y1="127" x2="162.56" y2="127" width="0.1524" layer="91"/>
-<label x="162.56" y="127" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="FIFO_DATA0" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P43"/>
-<wire x1="160.02" y1="124.46" x2="162.56" y2="124.46" width="0.1524" layer="91"/>
-<label x="162.56" y="124.46" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="FIFO_DATA1" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P44"/>
-<wire x1="160.02" y1="121.92" x2="162.56" y2="121.92" width="0.1524" layer="91"/>
-<label x="162.56" y="121.92" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="FIFO_TXE" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P45"/>
-<wire x1="160.02" y1="119.38" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
-<label x="162.56" y="119.38" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="PB2" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P46"/>
-<wire x1="160.02" y1="116.84" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
-<label x="162.56" y="116.84" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="PHI2" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P47"/>
-<wire x1="160.02" y1="114.3" x2="162.56" y2="114.3" width="0.1524" layer="91"/>
-<label x="162.56" y="114.3" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="FIFO_RXF" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P48"/>
-<wire x1="160.02" y1="111.76" x2="162.56" y2="111.76" width="0.1524" layer="91"/>
-<label x="162.56" y="111.76" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="A2" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P50"/>
-<wire x1="160.02" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
-<label x="162.56" y="106.68" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="FIFO_DATA3" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P51"/>
-<wire x1="160.02" y1="104.14" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
-<label x="162.56" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="CA1" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P52"/>
-<wire x1="160.02" y1="101.6" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
-<label x="162.56" y="101.6" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="CA2" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P56"/>
-<wire x1="160.02" y1="96.52" x2="162.56" y2="96.52" width="0.1524" layer="91"/>
-<label x="162.56" y="96.52" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="A0" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P57"/>
-<wire x1="160.02" y1="93.98" x2="162.56" y2="93.98" width="0.1524" layer="91"/>
-<label x="162.56" y="93.98" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="PA2" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P58"/>
-<wire x1="160.02" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
-<label x="162.56" y="91.44" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="A1" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P59"/>
-<wire x1="160.02" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
-<label x="162.56" y="88.9" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="PA1" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P60"/>
-<wire x1="160.02" y1="86.36" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
-<label x="162.56" y="86.36" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="PB0" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P61"/>
-<wire x1="160.02" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
-<label x="162.56" y="83.82" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="PA3" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P62"/>
-<wire x1="160.02" y1="81.28" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
-<label x="162.56" y="81.28" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="PA4" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P63"/>
-<wire x1="160.02" y1="78.74" x2="162.56" y2="78.74" width="0.1524" layer="91"/>
-<label x="162.56" y="78.74" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="PA5" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="GSR/P64"/>
 <wire x1="160.02" y1="76.2" x2="162.56" y2="76.2" width="0.1524" layer="91"/>
 <label x="162.56" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="FIFO_DATA2" class="0">
+<net name="Y" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P49"/>
-<wire x1="160.02" y1="109.22" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
-<label x="162.56" y="109.22" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P24"/>
+<wire x1="119.38" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
+<label x="116.84" y="91.44" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="FIFO_DATA7" class="0">
+<net name="FIFO_DATA0" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P1"/>
+<wire x1="119.38" y1="149.86" x2="116.84" y2="149.86" width="0.1524" layer="91"/>
+<label x="116.84" y="149.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="FIFO_DATA1" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P2/GTS2"/>
+<wire x1="119.38" y1="147.32" x2="116.84" y2="147.32" width="0.1524" layer="91"/>
+<label x="116.84" y="147.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="FIFO_TXE" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P13"/>
+<wire x1="119.38" y1="119.38" x2="116.84" y2="119.38" width="0.1524" layer="91"/>
+<label x="116.84" y="119.38" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PB2" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P42"/>
+<wire x1="160.02" y1="127" x2="162.56" y2="127" width="0.1524" layer="91"/>
+<label x="162.56" y="127" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="PHI2" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P32"/>
+<wire x1="119.38" y1="76.2" x2="116.84" y2="76.2" width="0.1524" layer="91"/>
+<label x="116.84" y="76.2" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="FIFO_RXF" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P12"/>
+<wire x1="119.38" y1="121.92" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
+<label x="116.84" y="121.92" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="FIFO_DATA3" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P5/GTS1"/>
+<wire x1="119.38" y1="139.7" x2="116.84" y2="139.7" width="0.1524" layer="91"/>
+<label x="116.84" y="139.7" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="CA1" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P61"/>
+<wire x1="160.02" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
+<label x="162.56" y="83.82" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="CA2" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P62"/>
+<wire x1="160.02" y1="81.28" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
+<label x="162.56" y="81.28" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="PA2" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P56"/>
+<wire x1="160.02" y1="96.52" x2="162.56" y2="96.52" width="0.1524" layer="91"/>
+<label x="162.56" y="96.52" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="PA1" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P52"/>
+<wire x1="160.02" y1="101.6" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
+<label x="162.56" y="101.6" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="PB0" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="P39"/>
 <wire x1="160.02" y1="134.62" x2="162.56" y2="134.62" width="0.1524" layer="91"/>
 <label x="162.56" y="134.62" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
+<net name="PA3" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P57"/>
+<wire x1="160.02" y1="93.98" x2="162.56" y2="93.98" width="0.1524" layer="91"/>
+<label x="162.56" y="93.98" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="PA5" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P59"/>
+<wire x1="160.02" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
+<label x="162.56" y="88.9" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="FIFO_DATA2" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P4"/>
+<wire x1="119.38" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
+<label x="116.84" y="142.24" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="FIFO_DATA7" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P9"/>
+<wire x1="119.38" y1="129.54" x2="116.84" y2="129.54" width="0.1524" layer="91"/>
+<label x="116.84" y="129.54" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
 <net name="CLEAR" class="1">
 <segment>
-<pinref part="U8" gate="G$1" pin="P31"/>
-<wire x1="119.38" y1="78.74" x2="116.84" y2="78.74" width="0.1524" layer="91"/>
-<label x="116.84" y="78.74" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P49"/>
+<wire x1="160.02" y1="109.22" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
+<label x="162.56" y="109.22" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="3V3" class="1">
@@ -4352,6 +4321,41 @@ Y E000 FFFF EEPROM</text>
 <pinref part="U8" gate="PD" pin="VCC"/>
 <pinref part="3V37" gate="3V3" pin="3V3"/>
 <junction x="205.74" y="152.4"/>
+</segment>
+</net>
+<net name="PA4" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P58"/>
+<wire x1="160.02" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
+<label x="162.56" y="91.44" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="A15" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P36"/>
+<wire x1="160.02" y1="142.24" x2="162.56" y2="142.24" width="0.1524" layer="91"/>
+<label x="162.56" y="142.24" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="A14" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P35"/>
+<wire x1="160.02" y1="144.78" x2="162.56" y2="144.78" width="0.1524" layer="91"/>
+<label x="162.56" y="144.78" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="A13" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P34"/>
+<wire x1="160.02" y1="147.32" x2="162.56" y2="147.32" width="0.1524" layer="91"/>
+<label x="162.56" y="147.32" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="A12" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P33"/>
+<wire x1="160.02" y1="149.86" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
+<label x="162.56" y="149.86" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 </nets>
