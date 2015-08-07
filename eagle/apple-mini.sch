@@ -175,9 +175,9 @@ Source: &lt;a href="http://github.com/sstallion/apple-mini/"&gt;http://github.co
 <smd name="4" x="4.8" y="-0.65" dx="0.4" dy="1.35" layer="1" rot="R90"/>
 <wire x1="0" y1="-4" x2="0" y2="4.445" width="0" layer="51"/>
 <text x="3.175" y="5.08" size="1.27" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="0" y1="4.445" x2="6.35" y2="4.445" width="0.127" layer="51"/>
-<wire x1="6.35" y1="4.445" x2="6.35" y2="-4.445" width="0.127" layer="51"/>
-<wire x1="6.35" y1="-4.445" x2="0" y2="-4.445" width="0.127" layer="51"/>
+<wire x1="0" y1="4.445" x2="5.715" y2="4.445" width="0.127" layer="51"/>
+<wire x1="5.715" y1="4.445" x2="5.715" y2="-4.445" width="0.127" layer="51"/>
+<wire x1="5.715" y1="-4.445" x2="0" y2="-4.445" width="0.127" layer="51"/>
 <wire x1="0" y1="-4.445" x2="0" y2="4.445" width="0.127" layer="51"/>
 </package>
 <package name="SOIC8">
@@ -219,7 +219,7 @@ Source: &lt;a href="http://github.com/sstallion/apple-mini/"&gt;http://github.co
 <wire x1="8.325" y1="3.175" x2="-8.325" y2="3.175" width="0.127" layer="51"/>
 <hole x="-5" y="0" drill="1"/>
 <hole x="5" y="0" drill="1"/>
-<text x="-8.325" y="4.13499375" size="1.27" layer="27" font="vector">&gt;NAME</text>
+<text x="-8.325" y="4.13499375" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-8.96" y="-2.125" size="1.016" layer="21" font="vector" align="center-right">1</text>
 </package>
 <package name="SMTR92">
@@ -1183,7 +1183,7 @@ Source: &lt;a href="http://portal.fciconnect.com/Comergent//fci/drawing/10118193
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5 6 7 8 9"/>
+<connect gate="G$1" pin="5" pad="5 6 7 8 9" route="any"/>
 </connects>
 <technologies>
 <technology name="">
@@ -2975,7 +2975,7 @@ CBUS6: PWREN#</text>
 <pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="CLEAR" class="1">
+<net name="CLEAR" class="0">
 <segment>
 <pinref part="U2" gate="B" pin="Y"/>
 <wire x1="121.92" y1="104.14" x2="124.46" y2="104.14" width="0.1524" layer="91"/>
@@ -3949,24 +3949,24 @@ Y E000 FFFF EEPROM</text>
 <label x="116.84" y="114.3" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
+<pinref part="U8" gate="G$1" pin="P20"/>
+<wire x1="119.38" y1="101.6" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
+<label x="116.84" y="101.6" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <pinref part="U8" gate="G$1" pin="P18"/>
 <wire x1="119.38" y1="106.68" x2="116.84" y2="106.68" width="0.1524" layer="91"/>
 <label x="116.84" y="106.68" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="P31"/>
-<wire x1="119.38" y1="78.74" x2="116.84" y2="78.74" width="0.1524" layer="91"/>
-<label x="116.84" y="78.74" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P62"/>
+<wire x1="160.02" y1="81.28" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
+<label x="162.56" y="81.28" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="P50"/>
-<wire x1="160.02" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
-<label x="162.56" y="106.68" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U8" gate="G$1" pin="P38"/>
-<wire x1="160.02" y1="137.16" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
-<label x="162.56" y="137.16" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P36"/>
+<wire x1="160.02" y1="142.24" x2="162.56" y2="142.24" width="0.1524" layer="91"/>
+<label x="162.56" y="142.24" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="P27"/>
@@ -3983,72 +3983,72 @@ Y E000 FFFF EEPROM</text>
 </net>
 <net name="PA6" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P60"/>
-<wire x1="160.02" y1="86.36" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
-<label x="162.56" y="86.36" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P61"/>
+<wire x1="160.02" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
+<label x="162.56" y="83.82" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PB1" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P40"/>
-<wire x1="160.02" y1="132.08" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
-<label x="162.56" y="132.08" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="PA0" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P51"/>
-<wire x1="160.02" y1="104.14" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
-<label x="162.56" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="PB3" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P43"/>
-<wire x1="160.02" y1="124.46" x2="162.56" y2="124.46" width="0.1524" layer="91"/>
-<label x="162.56" y="124.46" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="FIFO_DATA4" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P6"/>
-<wire x1="119.38" y1="137.16" x2="116.84" y2="137.16" width="0.1524" layer="91"/>
-<label x="116.84" y="137.16" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="FIFO_DATA5" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P7"/>
-<wire x1="119.38" y1="134.62" x2="116.84" y2="134.62" width="0.1524" layer="91"/>
-<label x="116.84" y="134.62" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="FIFO_DATA6" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P8"/>
-<wire x1="119.38" y1="132.08" x2="116.84" y2="132.08" width="0.1524" layer="91"/>
-<label x="116.84" y="132.08" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="PB4" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P44"/>
-<wire x1="160.02" y1="121.92" x2="162.56" y2="121.92" width="0.1524" layer="91"/>
-<label x="162.56" y="121.92" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="PB6" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="P46"/>
 <wire x1="160.02" y1="116.84" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
 <label x="162.56" y="116.84" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
+<net name="PA0" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P50"/>
+<wire x1="160.02" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
+<label x="162.56" y="106.68" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="PB3" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P44"/>
+<wire x1="160.02" y1="121.92" x2="162.56" y2="121.92" width="0.1524" layer="91"/>
+<label x="162.56" y="121.92" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="FIFO_DATA4" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P12"/>
+<wire x1="119.38" y1="121.92" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
+<label x="116.84" y="121.92" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="FIFO_DATA5" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P6"/>
+<wire x1="119.38" y1="137.16" x2="116.84" y2="137.16" width="0.1524" layer="91"/>
+<label x="116.84" y="137.16" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="FIFO_DATA6" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P5/GTS1"/>
+<wire x1="119.38" y1="139.7" x2="116.84" y2="139.7" width="0.1524" layer="91"/>
+<label x="116.84" y="139.7" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PB4" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P43"/>
+<wire x1="160.02" y1="124.46" x2="162.56" y2="124.46" width="0.1524" layer="91"/>
+<label x="162.56" y="124.46" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="PB6" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P40"/>
+<wire x1="160.02" y1="132.08" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
+<label x="162.56" y="132.08" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
 <net name="PB5" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P45"/>
-<wire x1="160.02" y1="119.38" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
-<label x="162.56" y="119.38" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P42"/>
+<wire x1="160.02" y1="127" x2="162.56" y2="127" width="0.1524" layer="91"/>
+<label x="162.56" y="127" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="CLK12MHZ" class="0">
@@ -4060,9 +4060,9 @@ Y E000 FFFF EEPROM</text>
 </net>
 <net name="FIFO_WR" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P11"/>
-<wire x1="119.38" y1="124.46" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
-<label x="116.84" y="124.46" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P1"/>
+<wire x1="119.38" y1="149.86" x2="116.84" y2="149.86" width="0.1524" layer="91"/>
+<label x="116.84" y="149.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CB1" class="0">
@@ -4074,16 +4074,16 @@ Y E000 FFFF EEPROM</text>
 </net>
 <net name="DA" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P47"/>
-<wire x1="160.02" y1="114.3" x2="162.56" y2="114.3" width="0.1524" layer="91"/>
-<label x="162.56" y="114.3" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P39"/>
+<wire x1="160.02" y1="134.62" x2="162.56" y2="134.62" width="0.1524" layer="91"/>
+<label x="162.56" y="134.62" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="FIFO_RD" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P10"/>
-<wire x1="119.38" y1="127" x2="116.84" y2="127" width="0.1524" layer="91"/>
-<label x="116.84" y="127" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P2/GTS2"/>
+<wire x1="119.38" y1="147.32" x2="116.84" y2="147.32" width="0.1524" layer="91"/>
+<label x="116.84" y="147.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PHI0" class="0">
@@ -4095,9 +4095,9 @@ Y E000 FFFF EEPROM</text>
 </net>
 <net name="R" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P19"/>
-<wire x1="119.38" y1="104.14" x2="116.84" y2="104.14" width="0.1524" layer="91"/>
-<label x="116.84" y="104.14" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P23"/>
+<wire x1="119.38" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
+<label x="116.84" y="93.98" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TCK" class="0">
@@ -4130,30 +4130,30 @@ Y E000 FFFF EEPROM</text>
 </net>
 <net name="S" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P20"/>
-<wire x1="119.38" y1="101.6" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
-<label x="116.84" y="101.6" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="X" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P23"/>
-<wire x1="119.38" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
-<label x="116.84" y="93.98" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="T" class="0">
-<segment>
 <pinref part="U8" gate="G$1" pin="P22"/>
 <wire x1="119.38" y1="96.52" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
 <label x="116.84" y="96.52" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="X" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P32"/>
+<wire x1="119.38" y1="76.2" x2="116.84" y2="76.2" width="0.1524" layer="91"/>
+<label x="116.84" y="76.2" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="T" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P31"/>
+<wire x1="119.38" y1="78.74" x2="116.84" y2="78.74" width="0.1524" layer="91"/>
+<label x="116.84" y="78.74" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
 <net name="Z" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P25"/>
-<wire x1="119.38" y1="88.9" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
-<label x="116.84" y="88.9" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P24"/>
+<wire x1="119.38" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
+<label x="116.84" y="91.44" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CB2" class="0">
@@ -4165,79 +4165,79 @@ Y E000 FFFF EEPROM</text>
 </net>
 <net name="Y" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P24"/>
-<wire x1="119.38" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
-<label x="116.84" y="91.44" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P25"/>
+<wire x1="119.38" y1="88.9" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
+<label x="116.84" y="88.9" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="FIFO_DATA0" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P1"/>
-<wire x1="119.38" y1="149.86" x2="116.84" y2="149.86" width="0.1524" layer="91"/>
-<label x="116.84" y="149.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="FIFO_DATA1" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P2/GTS2"/>
-<wire x1="119.38" y1="147.32" x2="116.84" y2="147.32" width="0.1524" layer="91"/>
-<label x="116.84" y="147.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="FIFO_TXE" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="P13"/>
 <wire x1="119.38" y1="119.38" x2="116.84" y2="119.38" width="0.1524" layer="91"/>
 <label x="116.84" y="119.38" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="FIFO_DATA1" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P9"/>
+<wire x1="119.38" y1="129.54" x2="116.84" y2="129.54" width="0.1524" layer="91"/>
+<label x="116.84" y="129.54" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="FIFO_TXE" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P8"/>
+<wire x1="119.38" y1="132.08" x2="116.84" y2="132.08" width="0.1524" layer="91"/>
+<label x="116.84" y="132.08" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
 <net name="PB2" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P42"/>
-<wire x1="160.02" y1="127" x2="162.56" y2="127" width="0.1524" layer="91"/>
-<label x="162.56" y="127" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P45"/>
+<wire x1="160.02" y1="119.38" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
+<label x="162.56" y="119.38" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PHI2" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P32"/>
-<wire x1="119.38" y1="76.2" x2="116.84" y2="76.2" width="0.1524" layer="91"/>
-<label x="116.84" y="76.2" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P19"/>
+<wire x1="119.38" y1="104.14" x2="116.84" y2="104.14" width="0.1524" layer="91"/>
+<label x="116.84" y="104.14" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="FIFO_RXF" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P12"/>
-<wire x1="119.38" y1="121.92" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
-<label x="116.84" y="121.92" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P10"/>
+<wire x1="119.38" y1="127" x2="116.84" y2="127" width="0.1524" layer="91"/>
+<label x="116.84" y="127" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="FIFO_DATA3" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P5/GTS1"/>
-<wire x1="119.38" y1="139.7" x2="116.84" y2="139.7" width="0.1524" layer="91"/>
-<label x="116.84" y="139.7" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P4"/>
+<wire x1="119.38" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
+<label x="116.84" y="142.24" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CA1" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P61"/>
-<wire x1="160.02" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
-<label x="162.56" y="83.82" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P51"/>
+<wire x1="160.02" y1="104.14" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
+<label x="162.56" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="CA2" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P62"/>
-<wire x1="160.02" y1="81.28" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
-<label x="162.56" y="81.28" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P56"/>
+<wire x1="160.02" y1="96.52" x2="162.56" y2="96.52" width="0.1524" layer="91"/>
+<label x="162.56" y="96.52" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PA2" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P56"/>
-<wire x1="160.02" y1="96.52" x2="162.56" y2="96.52" width="0.1524" layer="91"/>
-<label x="162.56" y="96.52" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P57"/>
+<wire x1="160.02" y1="93.98" x2="162.56" y2="93.98" width="0.1524" layer="91"/>
+<label x="162.56" y="93.98" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PA1" class="0">
@@ -4249,40 +4249,40 @@ Y E000 FFFF EEPROM</text>
 </net>
 <net name="PB0" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P39"/>
-<wire x1="160.02" y1="134.62" x2="162.56" y2="134.62" width="0.1524" layer="91"/>
-<label x="162.56" y="134.62" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P47"/>
+<wire x1="160.02" y1="114.3" x2="162.56" y2="114.3" width="0.1524" layer="91"/>
+<label x="162.56" y="114.3" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PA3" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="P57"/>
-<wire x1="160.02" y1="93.98" x2="162.56" y2="93.98" width="0.1524" layer="91"/>
-<label x="162.56" y="93.98" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="PA5" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="P59"/>
 <wire x1="160.02" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
 <label x="162.56" y="88.9" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
+<net name="PA5" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P60"/>
+<wire x1="160.02" y1="86.36" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
+<label x="162.56" y="86.36" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
 <net name="FIFO_DATA2" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P4"/>
-<wire x1="119.38" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
-<label x="116.84" y="142.24" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P11"/>
+<wire x1="119.38" y1="124.46" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
+<label x="116.84" y="124.46" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="FIFO_DATA7" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P9"/>
-<wire x1="119.38" y1="129.54" x2="116.84" y2="129.54" width="0.1524" layer="91"/>
-<label x="116.84" y="129.54" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P7"/>
+<wire x1="119.38" y1="134.62" x2="116.84" y2="134.62" width="0.1524" layer="91"/>
+<label x="116.84" y="134.62" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="CLEAR" class="1">
+<net name="CLEAR" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="P49"/>
 <wire x1="160.02" y1="109.22" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
@@ -4332,9 +4332,9 @@ Y E000 FFFF EEPROM</text>
 </net>
 <net name="A15" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="P36"/>
-<wire x1="160.02" y1="142.24" x2="162.56" y2="142.24" width="0.1524" layer="91"/>
-<label x="162.56" y="142.24" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="P38"/>
+<wire x1="160.02" y1="137.16" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
+<label x="162.56" y="137.16" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="A14" class="0">

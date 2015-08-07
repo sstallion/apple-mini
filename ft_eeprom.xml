@@ -20,7 +20,7 @@
   </USB_Config_Descriptor>
   <USB_String_Descriptors>
     <Manufacturer>Steven Stallion</Manufacturer>
-    <Product_Description>Apple-1 Mini</Product_Description>
+    <Product_Description>Apple Mini 1</Product_Description>
     <SerialNumber_Enabled>true</SerialNumber_Enabled>
     <SerialNumber />
     <SerialNumberPrefix>A1</SerialNumberPrefix>

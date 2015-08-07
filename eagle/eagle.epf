@@ -2,6 +2,7 @@
 Version="07 03 00"
 Platform="Linux"
 Serial="7121D5BDC7-LSR-WLM-1SS"
+Globals="Globals"
 
 [Globals]
 AutoSaveProject=0
