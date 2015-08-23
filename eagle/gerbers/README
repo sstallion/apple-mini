@@ -1,0 +1,11 @@
+Name           Description
+apple-mini.gto Top Silkscreen
+apple-mini.gts Top Soldermask
+apple-mini.gtl Top Copper
+apple-mini.gl1 Inner Copper 1 (Ground)
+apple-mini.gl2 Inner Copper 2 (Power)
+apple-mini.gbl Bottom Copper
+apple-mini.gbs Bottom Soldermask
+apple-mini.gbo Bottom Silkscreen
+apple-mini.gml Mill Layer
+apple-mini.txt Drill File

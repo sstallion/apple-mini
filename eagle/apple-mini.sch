@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2243,8 +2243,8 @@ Max Bus Power Current: 500mA
 Load VCP Driver: Enabled
 CBUS5: CLK12MHz
 CBUS6: PWREN#</text>
-<text x="104.14" y="40.64" size="1.27" layer="97" font="vector">50mA max</text>
-<text x="104.14" y="58.42" size="1.27" layer="97" font="vector">500mA max</text>
+<text x="104.14" y="40.64" size="1.27" layer="97" font="vector" ratio="10">50mA max</text>
+<text x="104.14" y="58.42" size="1.27" layer="97" font="vector" ratio="10">500mA max</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="124.46" y="175.26"/>
